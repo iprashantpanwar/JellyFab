@@ -5,7 +5,7 @@
 
 
 # JellyFab
-<p align="center">
+<p align="start">
   <a href="https://android.com">
     <img src="https://img.shields.io/badge/platform-Android-3DDC84?logo=android&logoColor=white" />
   </a>
