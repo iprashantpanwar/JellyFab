@@ -25,7 +25,7 @@ A modern, physics-driven floating action menu for **Jetpack Compose**. JellyFab 
 Designed for apps that value motion, playfulness, and polished interaction.
 
 <p align="center">
-  <img src="art/jellyfab.gif" width="840" alt="JellyFab demo animation" />
+  <video src="art/jellyfab.mp4" autoplay loop muted playsinline style="width: 300px; border-radius: 12px;"></video>
 </p>
 
 Inspiration: https://dribbble.com/shots/3908815-Floating-button
