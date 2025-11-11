@@ -4,10 +4,6 @@
 </p>
 
 <p align="center">
-  <img src="art/jellyfab.gif" width="420" alt="JellyFab demo animation" />
-</p>
-
-<p align="center">
   <a href="https://android.com">
     <img src="https://img.shields.io/badge/platform-Android-3DDC84?logo=android&logoColor=white" />
   </a>
@@ -28,6 +24,10 @@
 A modern, physics-driven floating action menu for **Jetpack Compose**. JellyFab provides a smooth, flexible, and delightful jelly-like expansion animation based on real spring dynamics — while remaining easy to integrate, fully customizable, and production-ready.
 
 Designed for apps that value motion, playfulness, and polished interaction.
+
+<p align="center">
+  <img src="art/jellyfab.gif" width="840" alt="JellyFab demo animation" />
+</p>
 
 ---
 
