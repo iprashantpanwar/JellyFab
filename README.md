@@ -1,3 +1,28 @@
+<p align="center">
+  <!-- Replace this later with your final Jellyfish logo -->
+  <img src="art/jellyfab_logo.png" width="110" alt="JellyFab Logo" />
+</p>
+
+<p align="center">
+  <img src="art/jellyfab.gif" width="420" alt="JellyFab demo animation" />
+</p>
+
+<p align="center">
+  <a href="https://android.com">
+    <img src="https://img.shields.io/badge/platform-Android-3DDC84?logo=android&logoColor=white" />
+  </a>
+  <a href="https://kotlinlang.org">
+    <img src="https://img.shields.io/badge/Kotlin-1.9.20-blue?logo=kotlin" />
+  </a>
+  <a href="https://developer.android.com/jetpack/compose">
+    <img src="https://img.shields.io/badge/Jetpack%20Compose-UI%20Toolkit-4285F4?logo=jetpackcompose&logoColor=white" />
+  </a>
+  <a href="https://jitpack.io/#iprashantpanwar/JellyFab">
+    <img src="https://jitpack.io/v/iprashantpanwar/JellyFab.svg" />
+  </a>
+</p>
+
+
 # JellyFab
 
 A modern, physics-driven floating action menu for **Jetpack Compose**. JellyFab provides a smooth, flexible, and delightful jelly-like expansion animation based on real spring dynamics — while remaining easy to integrate, fully customizable, and production-ready.
