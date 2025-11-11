@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/badge/platform-Android-3DDC84?logo=android&logoColor=white" />
   </a>
   <a href="https://kotlinlang.org">
-    <img src="https://img.shields.io/badge/Kotlin-1.9.20-blue?logo=kotlin" />
+    <img src="https://img.shields.io/badge/Kotlin-2.0.21-blue?logo=kotlin" />
   </a>
   <a href="https://developer.android.com/jetpack/compose">
     <img src="https://img.shields.io/badge/Jetpack%20Compose-UI%20Toolkit-4285F4?logo=jetpackcompose&logoColor=white" />
@@ -20,12 +20,12 @@
   </a>
 </p>
 
-A modern, physics-driven floating action menu for **Jetpack Compose**. JellyFab provides a smooth, flexible, and delightful jelly-like expansion animation based on real spring dynamics — while remaining easy to integrate, fully customizable, and production-ready.
+A modern, physics-driven floating action menu for **Jetpack Compose**. JellyFab provides a smooth, flexible, and delightful jelly-like expansion animation based on real spring dynamics, while remaining easy to integrate, fully customizable, and production-ready.
 
 Designed for apps that value motion, playfulness, and polished interaction.
 
 <p align="center">
-  <video src="art/jellyfab.mp4" autoplay loop muted playsinline style="width: 300px; border-radius: 12px;"></video>
+  <img src="art/jellyfab.gif" width="840" alt="JellyFab demo animation" />
 </p>
 
 Inspiration: https://dribbble.com/shots/3908815-Floating-button
