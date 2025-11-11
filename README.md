@@ -1,8 +1,10 @@
 <p align="center">
   <!-- Replace this later with your final Jellyfish logo -->
-  <img src="art/jellyfab_logo.png" width="110" alt="JellyFab Logo" />
+  <img src="art/jellyfab_logo.png" width="200" alt="JellyFab Logo" />
 </p>
 
+
+# JellyFab
 <p align="center">
   <a href="https://android.com">
     <img src="https://img.shields.io/badge/platform-Android-3DDC84?logo=android&logoColor=white" />
@@ -18,9 +20,6 @@
   </a>
 </p>
 
-
-# JellyFab
-
 A modern, physics-driven floating action menu for **Jetpack Compose**. JellyFab provides a smooth, flexible, and delightful jelly-like expansion animation based on real spring dynamics — while remaining easy to integrate, fully customizable, and production-ready.
 
 Designed for apps that value motion, playfulness, and polished interaction.
@@ -28,6 +27,8 @@ Designed for apps that value motion, playfulness, and polished interaction.
 <p align="center">
   <img src="art/jellyfab.gif" width="840" alt="JellyFab demo animation" />
 </p>
+
+Inspiration: https://dribbble.com/shots/3908815-Floating-button
 
 ---
 
@@ -153,6 +154,8 @@ If you encounter an issue:
 
 ---
 
+Made with ❤️ and too many physics tweeks 🎛️
+
 ## 📜 License
 
 ```
@@ -163,6 +166,4 @@ Copyright 2025 Prashant Panwar
 This library is free to use and modify.
 
 ---
-
-Made with ❤️ and too many physics tweeks 🎛️🔥
 
