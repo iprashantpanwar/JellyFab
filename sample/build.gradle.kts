@@ -40,7 +40,7 @@ android {
 }
 
 dependencies {
-    implementation(project(":jellyfab"))
+    implementation(libs.jellyfab)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
