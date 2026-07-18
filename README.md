@@ -34,6 +34,13 @@ Inspiration: https://dribbble.com/shots/3908815-Floating-button
   <img src="art/jellyfab_inspiration.gif" width="540" alt="JellyFab demo animation" />
 </p>
 
+## 📖 How JellyFab Works
+Wrote a deep dive on ProAndroidDev covering the implementation.
+
+👉 **I Built a Jelly-Like FAB Menu for Jetpack Compose. Here's How the Blob Actually Works**
+
+https://medium.com/proandroiddev/i-built-a-jelly-like-fab-menu-for-jetpack-compose-42e9f65f6576
+
 ---
 
 ## ✨ Features
