@@ -29,7 +29,7 @@ data class JellyFabConfig(
 
     /**
      * Delay between each primary-layer FAB collapsing inward (ms).
-     * Generally slightly small than [expandStagger] for a quicker close.
+     * Generally slightly smaller than [expandStagger] for a quicker close.
      */
     val collapseStagger: Long = 100L,
 

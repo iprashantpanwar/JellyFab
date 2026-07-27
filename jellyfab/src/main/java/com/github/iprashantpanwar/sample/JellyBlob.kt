@@ -6,6 +6,8 @@
 package com.github.iprashantpanwar.sample
 
 import android.graphics.BlurMaskFilter
+import androidx.compose.animation.core.Animatable
+import androidx.compose.animation.core.AnimationVector1D
 import android.graphics.Paint as AndroidPaint
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.size
@@ -37,7 +39,7 @@ import kotlin.math.sqrt
  * influenced by the bulge state to mimic a natural squish + lift feel.
  *
  * @param size Size of the blob in layout (same as FAB size).
- * @param color Fill color of the blob.
+ * @param blobColor Fill color of the blob.
  * @param bulges One value per bulge angle. 0f = no bulge, 1f = full bulge.
  * @param shadowOpacity Base opacity of the shadow (0f–1f). Higher = darker shadow.
  * @param shadowBlurFactor Controls softness of shadow edges. Larger = more diffused.
@@ -49,8 +51,8 @@ import kotlin.math.sqrt
 fun JellyBlob(
     modifier: Modifier = Modifier,
     size: Dp,
-    color: Color,
-    bulges: List<Float>,
+    blobColor: Color,
+    bulges: List<Animatable<Float, AnimationVector1D>>,
     shadowOpacity: Float,
     shadowBlurFactor: Float,
     bulgeAngles: List<Double>,
@@ -63,10 +65,9 @@ fun JellyBlob(
         val cy = h / 2f
         val baseR = min(w, h) * 0.45f
 
-        val bulgeValues = bulges.map { it }
-        val topBulge = bulgeValues.getOrNull(0) ?: 0f
-        val diaBulge = bulgeValues.getOrNull(1) ?: 0f
-        val leftBulge = bulgeValues.getOrNull(2) ?: 0f
+        val topBulge = bulges.getOrNull(0)?.value ?: 0f
+        val diaBulge = bulges.getOrNull(1)?.value ?: 0f
+        val leftBulge = bulges.getOrNull(2)?.value ?: 0f
         val bulgeInfluence = (abs(topBulge) + abs(leftBulge) + abs(diaBulge)) / 3f
         val shadowSpread = 1.1f - 0.08f * bulgeInfluence
         val shadowAlpha = shadowOpacity + 0.1f * bulgeInfluence
@@ -75,7 +76,7 @@ fun JellyBlob(
         val shadowPaint = AndroidPaint().apply {
             isAntiAlias = true
             style = AndroidPaint.Style.FILL
-            this.color = color.copy(alpha = shadowAlpha).toArgb()
+            color = blobColor.copy(alpha = shadowAlpha).toArgb()
             maskFilter = BlurMaskFilter(baseR * shadowBlurFactor * shadowSpread, BlurMaskFilter.Blur.NORMAL)
         }
 
@@ -96,7 +97,7 @@ fun JellyBlob(
         }
 
         for ((idx, deg) in bulgeAngles.withIndex()) {
-            val v = bulges.getOrNull(idx) ?: 0f
+            val v = bulges.map { it.value }.getOrNull(idx) ?: 0f
             if (v != 0f) {
                 val push = baseR * bounceFactor * v
                 val aRad = Math.toRadians(deg)
@@ -124,6 +125,6 @@ fun JellyBlob(
             close()
         }
 
-        drawPath(path, color)
+        drawPath(path, blobColor)
     }
 }
