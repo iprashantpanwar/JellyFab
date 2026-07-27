@@ -1,3 +1,15 @@
-# Default ignored files
+# User-specific IDE state
 /shelf/
 /workspace.xml
+/tasks.xml
+/httpRequests/
+
+# Android Studio local state
+/appInsightsSettings.xml
+/deviceManager.xml
+/deploymentTargetDropDown.xml
+/deploymentTargetSelector.xml
+/markdown.xml
+
+# Local VCS configuration
+/vcs.xml
