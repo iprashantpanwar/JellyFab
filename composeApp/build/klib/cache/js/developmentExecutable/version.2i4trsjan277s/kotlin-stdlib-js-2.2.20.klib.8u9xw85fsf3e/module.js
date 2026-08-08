@@ -190,41 +190,41 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForCompanion(Companion);
   initMetadataForInterface(Comparable, 'Comparable');
   initMetadataForClass(Char, 'Char', VOID, VOID, [Comparable]);
+  initMetadataForInterface(MutableIterable, 'MutableIterable', VOID, VOID, [Iterable]);
   initMetadataForCompanion(Companion_0);
   initMetadataForInterface(Collection, 'Collection', VOID, VOID, [Iterable]);
   function asJsReadonlyArrayView() {
     return createJsReadonlyArrayViewFrom(this);
   }
   initMetadataForInterface(KtList, 'List', VOID, VOID, [Collection]);
-  initMetadataForInterface(Entry, 'Entry');
-  initMetadataForCompanion(Companion_1);
-  function asJsReadonlyMapView() {
-    return createJsReadonlyMapViewFrom(this);
-  }
-  initMetadataForInterface(KtMap, 'Map');
-  initMetadataForInterface(MutableEntry, 'MutableEntry', VOID, VOID, [Entry]);
-  initMetadataForCompanion(Companion_2);
-  function asJsMapView() {
-    return createJsMapViewFrom(this);
-  }
-  initMetadataForInterface(KtMutableMap, 'MutableMap', VOID, VOID, [KtMap]);
-  initMetadataForCompanion(Companion_3);
-  initMetadataForInterface(MutableIterable, 'MutableIterable', VOID, VOID, [Iterable]);
   initMetadataForInterface(MutableCollection, 'MutableCollection', VOID, VOID, [Collection, MutableIterable]);
   function asJsArrayView() {
     return createJsArrayViewFrom(this);
   }
   initMetadataForInterface(KtMutableList, 'MutableList', VOID, VOID, [KtList, MutableCollection]);
-  initMetadataForCompanion(Companion_4);
+  initMetadataForCompanion(Companion_1);
   function asJsReadonlySetView() {
     return createJsReadonlySetViewFrom(this);
   }
   initMetadataForInterface(KtSet, 'Set', VOID, VOID, [Collection]);
-  initMetadataForCompanion(Companion_5);
+  initMetadataForCompanion(Companion_2);
   function asJsSetView() {
     return createJsSetViewFrom(this);
   }
   initMetadataForInterface(KtMutableSet, 'MutableSet', VOID, VOID, [KtSet, MutableCollection]);
+  initMetadataForInterface(Entry, 'Entry');
+  initMetadataForCompanion(Companion_3);
+  function asJsReadonlyMapView() {
+    return createJsReadonlyMapViewFrom(this);
+  }
+  initMetadataForInterface(KtMap, 'Map');
+  initMetadataForInterface(MutableEntry, 'MutableEntry', VOID, VOID, [Entry]);
+  initMetadataForCompanion(Companion_4);
+  function asJsMapView() {
+    return createJsMapViewFrom(this);
+  }
+  initMetadataForInterface(KtMutableMap, 'MutableMap', VOID, VOID, [KtMap]);
+  initMetadataForCompanion(Companion_5);
   initMetadataForCompanion(Companion_6);
   initMetadataForClass(Enum, 'Enum', VOID, VOID, [Comparable]);
   initMetadataForCompanion(Companion_7);
@@ -269,18 +269,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForInterface(SuspendFunction1, 'SuspendFunction1', VOID, VOID, VOID, [1]);
   initMetadataForInterface(SuspendFunction0, 'SuspendFunction0', VOID, VOID, VOID, [0]);
   initMetadataForInterface(SuspendFunction3, 'SuspendFunction3', VOID, VOID, VOID, [3]);
-  initMetadataForInterface(Function1, 'Function1');
-  initMetadataForInterface(Function0, 'Function0');
-  initMetadataForInterface(Function2, 'Function2');
-  initMetadataForInterface(Function3, 'Function3');
-  initMetadataForInterface(Function7, 'Function7');
-  initMetadataForInterface(Function4, 'Function4');
-  initMetadataForInterface(Function8, 'Function8');
-  initMetadataForInterface(Function5, 'Function5');
-  initMetadataForInterface(Function6, 'Function6');
-  initMetadataForInterface(Function9, 'Function9');
   initMetadataForInterface(Function10, 'Function10');
-  initMetadataForInterface(Function11, 'Function11');
   initMetadataForInterface(Function13, 'Function13');
   initMetadataForInterface(Function14, 'Function14');
   initMetadataForInterface(Function15, 'Function15');
@@ -288,8 +277,19 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForInterface(Function17, 'Function17');
   initMetadataForInterface(Function18, 'Function18');
   initMetadataForInterface(Function19, 'Function19');
-  initMetadataForInterface(Function20, 'Function20');
+  initMetadataForInterface(Function0, 'Function0');
+  initMetadataForInterface(Function11, 'Function11');
+  initMetadataForInterface(Function8, 'Function8');
   initMetadataForInterface(Function21, 'Function21');
+  initMetadataForInterface(Function9, 'Function9');
+  initMetadataForInterface(Function3, 'Function3');
+  initMetadataForInterface(Function1, 'Function1');
+  initMetadataForInterface(Function20, 'Function20');
+  initMetadataForInterface(Function2, 'Function2');
+  initMetadataForInterface(Function4, 'Function4');
+  initMetadataForInterface(Function6, 'Function6');
+  initMetadataForInterface(Function5, 'Function5');
+  initMetadataForInterface(Function7, 'Function7');
   initMetadataForInterface(KCallable, 'KCallable');
   initMetadataForInterface(KFunction, 'KFunction', VOID, VOID, [KCallable]);
   initMetadataForInterface(KFunction2, 'KFunction2');
@@ -467,17 +467,17 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForClass(HrTimeSource, 'HrTimeSource', VOID, VOID, [DefaultTimeSource]);
   initMetadataForClass(PerformanceTimeSource, 'PerformanceTimeSource', VOID, VOID, [DefaultTimeSource]);
   initMetadataForObject(DateNowTimeSource, 'DateNowTimeSource', VOID, VOID, [DefaultTimeSource]);
-  initMetadataForClass(Suppress, 'Suppress', VOID, VOID, [Annotation]);
-  initMetadataForClass(SinceKotlin, 'SinceKotlin', VOID, VOID, [Annotation]);
-  initMetadataForClass(Deprecated, 'Deprecated', VOID, VOID, [Annotation]);
   initMetadataForClass(ReplaceWith, 'ReplaceWith', VOID, VOID, [Annotation]);
-  initMetadataForClass(DeprecatedSinceKotlin, 'DeprecatedSinceKotlin', VOID, VOID, [Annotation]);
-  initMetadataForClass(PublishedApi, 'PublishedApi', VOID, VOID, [Annotation]);
+  initMetadataForClass(Suppress, 'Suppress', VOID, VOID, [Annotation]);
+  initMetadataForClass(Deprecated, 'Deprecated', VOID, VOID, [Annotation]);
+  initMetadataForClass(SinceKotlin, 'SinceKotlin', VOID, VOID, [Annotation]);
   initMetadataForClass(DeprecationLevel, 'DeprecationLevel', VOID, Enum);
   initMetadataForClass(ParameterName, 'ParameterName', VOID, VOID, [Annotation]);
-  initMetadataForClass(ExtensionFunctionType, 'ExtensionFunctionType', VOID, VOID, [Annotation]);
   initMetadataForClass(UnsafeVariance, 'UnsafeVariance', VOID, VOID, [Annotation]);
   initMetadataForClass(DslMarker, 'DslMarker', VOID, VOID, [Annotation]);
+  initMetadataForClass(DeprecatedSinceKotlin, 'DeprecatedSinceKotlin', VOID, VOID, [Annotation]);
+  initMetadataForClass(ExtensionFunctionType, 'ExtensionFunctionType', VOID, VOID, [Annotation]);
+  initMetadataForClass(PublishedApi, 'PublishedApi', VOID, VOID, [Annotation]);
   initMetadataForClass(Target, 'Target', VOID, VOID, [Annotation]);
   initMetadataForClass(AnnotationTarget, 'AnnotationTarget', VOID, Enum);
   initMetadataForClass(MustBeDocumented, 'MustBeDocumented', VOID, VOID, [Annotation]);
@@ -742,8 +742,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
   initMetadataForObject(Monotonic, 'Monotonic', VOID, VOID, [WithComparableMarks]);
   initMetadataForCompanion(Companion_29);
   initMetadataForClass(AdjustedTimeMark, 'AdjustedTimeMark', VOID, VOID, [TimeMark]);
-  initMetadataForInterface(Lazy, 'Lazy');
   initMetadataForClass(LazyThreadSafetyMode, 'LazyThreadSafetyMode', VOID, Enum);
+  initMetadataForInterface(Lazy, 'Lazy');
   initMetadataForClass(UnsafeLazyImpl, 'UnsafeLazyImpl', VOID, VOID, [Lazy, Serializable]);
   initMetadataForObject(UNINITIALIZED_VALUE, 'UNINITIALIZED_VALUE');
   initMetadataForClass(InitializedLazyImpl, 'InitializedLazyImpl', VOID, VOID, [Lazy, Serializable]);
@@ -4475,8 +4475,12 @@ if (typeof String.prototype.startsWith === 'undefined') {
   protoOf(Char).hashCode = function () {
     return Char__hashCode_impl_otmys(this.value_1);
   };
+  function MutableIterable() {
+  }
+  function Iterable() {
+  }
   protoOf(Companion_0).fromJsArray_n3u761_k$ = function (array) {
-    return createListFrom(array);
+    return createMutableListFrom(array);
   };
   function Companion_0() {
     Companion_instance_0 = this;
@@ -4487,16 +4491,10 @@ if (typeof String.prototype.startsWith === 'undefined') {
       new Companion_0();
     return Companion_instance_0;
   }
-  function KtList() {
+  function KtMutableList() {
   }
-  function Iterable() {
-  }
-  function Collection() {
-  }
-  function Entry() {
-  }
-  protoOf(Companion_1).fromJsMap_p3spvk_k$ = function (map) {
-    return createMapFrom(map);
+  protoOf(Companion_1).fromJsSet_alycnr_k$ = function (set) {
+    return createSetFrom(set);
   };
   function Companion_1() {
     Companion_instance_1 = this;
@@ -4507,12 +4505,12 @@ if (typeof String.prototype.startsWith === 'undefined') {
       new Companion_1();
     return Companion_instance_1;
   }
-  function KtMap() {
+  function KtSet() {
   }
-  function MutableEntry() {
+  function Collection() {
   }
-  protoOf(Companion_2).fromJsMap_p3spvk_k$ = function (map) {
-    return createMutableMapFrom(map);
+  protoOf(Companion_2).fromJsSet_alycnr_k$ = function (set) {
+    return createMutableSetFrom(set);
   };
   function Companion_2() {
     Companion_instance_2 = this;
@@ -4523,10 +4521,12 @@ if (typeof String.prototype.startsWith === 'undefined') {
       new Companion_2();
     return Companion_instance_2;
   }
-  function KtMutableMap() {
+  function KtMutableSet() {
   }
-  protoOf(Companion_3).fromJsArray_n3u761_k$ = function (array) {
-    return createMutableListFrom(array);
+  function Entry() {
+  }
+  protoOf(Companion_3).fromJsMap_p3spvk_k$ = function (map) {
+    return createMapFrom(map);
   };
   function Companion_3() {
     Companion_instance_3 = this;
@@ -4537,10 +4537,12 @@ if (typeof String.prototype.startsWith === 'undefined') {
       new Companion_3();
     return Companion_instance_3;
   }
-  function KtMutableList() {
+  function KtMap() {
   }
-  protoOf(Companion_4).fromJsSet_alycnr_k$ = function (set) {
-    return createSetFrom(set);
+  function MutableEntry() {
+  }
+  protoOf(Companion_4).fromJsMap_p3spvk_k$ = function (map) {
+    return createMutableMapFrom(map);
   };
   function Companion_4() {
     Companion_instance_4 = this;
@@ -4551,10 +4553,12 @@ if (typeof String.prototype.startsWith === 'undefined') {
       new Companion_4();
     return Companion_instance_4;
   }
-  function KtSet() {
+  function KtMutableMap() {
   }
-  protoOf(Companion_5).fromJsSet_alycnr_k$ = function (set) {
-    return createMutableSetFrom(set);
+  function MutableCollection() {
+  }
+  protoOf(Companion_5).fromJsArray_n3u761_k$ = function (array) {
+    return createListFrom(array);
   };
   function Companion_5() {
     Companion_instance_5 = this;
@@ -4565,11 +4569,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
       new Companion_5();
     return Companion_instance_5;
   }
-  function KtMutableSet() {
-  }
-  function MutableCollection() {
-  }
-  function MutableIterable() {
+  function KtList() {
   }
   function Companion_6() {
     Companion_instance_6 = this;
@@ -7677,29 +7677,7 @@ if (typeof String.prototype.startsWith === 'undefined') {
   }
   function SuspendFunction3() {
   }
-  function Function1() {
-  }
-  function Function0() {
-  }
-  function Function2() {
-  }
-  function Function3() {
-  }
-  function Function7() {
-  }
-  function Function4() {
-  }
-  function Function8() {
-  }
-  function Function5() {
-  }
-  function Function6() {
-  }
-  function Function9() {
-  }
   function Function10() {
-  }
-  function Function11() {
   }
   function Function13() {
   }
@@ -7715,9 +7693,31 @@ if (typeof String.prototype.startsWith === 'undefined') {
   }
   function Function19() {
   }
-  function Function20() {
+  function Function0() {
+  }
+  function Function11() {
+  }
+  function Function8() {
   }
   function Function21() {
+  }
+  function Function9() {
+  }
+  function Function3() {
+  }
+  function Function1() {
+  }
+  function Function20() {
+  }
+  function Function2() {
+  }
+  function Function4() {
+  }
+  function Function6() {
+  }
+  function Function5() {
+  }
+  function Function7() {
   }
   function KFunction2() {
   }
@@ -12668,28 +12668,30 @@ if (typeof String.prototype.startsWith === 'undefined') {
     // Inline function 'kotlin.js.asDynamic' call
     _this__u8e3s4.sort(comparison);
   }
-  function emptyArray() {
-    return [];
-  }
   function lazy(initializer) {
     return new UnsafeLazyImpl(initializer);
   }
   function lazy_0(mode, initializer) {
     return new UnsafeLazyImpl(initializer);
   }
-  function fillFrom(src, dst) {
-    var srcLen = src.length;
-    var dstLen = dst.length;
-    var index = 0;
+  function arrayPlusCollection(array, collection) {
     // Inline function 'kotlin.js.unsafeCast' call
-    var arr = dst;
-    while (index < srcLen && index < dstLen) {
-      var tmp = index;
+    var result = array.slice();
+    // Inline function 'kotlin.js.asDynamic' call
+    result.length = result.length + collection.get_size_woubt6_k$() | 0;
+    // Inline function 'kotlin.copyArrayType' call
+    if (array.$type$ !== undefined) {
+      result.$type$ = array.$type$;
+    }
+    var index = array.length;
+    var _iterator__ex2g4s = collection.iterator_jk1svi_k$();
+    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
+      var element = _iterator__ex2g4s.next_20eer_k$();
       var _unary__edvuaz = index;
       index = _unary__edvuaz + 1 | 0;
-      arr[tmp] = src[_unary__edvuaz];
+      result[_unary__edvuaz] = element;
     }
-    return dst;
+    return result;
   }
   function arrayCopyResize(source, newSize, defaultValue) {
     // Inline function 'kotlin.js.unsafeCast' call
@@ -12710,24 +12712,22 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }
     return result;
   }
-  function arrayPlusCollection(array, collection) {
+  function fillFrom(src, dst) {
+    var srcLen = src.length;
+    var dstLen = dst.length;
+    var index = 0;
     // Inline function 'kotlin.js.unsafeCast' call
-    var result = array.slice();
-    // Inline function 'kotlin.js.asDynamic' call
-    result.length = result.length + collection.get_size_woubt6_k$() | 0;
-    // Inline function 'kotlin.copyArrayType' call
-    if (array.$type$ !== undefined) {
-      result.$type$ = array.$type$;
-    }
-    var index = array.length;
-    var _iterator__ex2g4s = collection.iterator_jk1svi_k$();
-    while (_iterator__ex2g4s.hasNext_bitz1p_k$()) {
-      var element = _iterator__ex2g4s.next_20eer_k$();
+    var arr = dst;
+    while (index < srcLen && index < dstLen) {
+      var tmp = index;
       var _unary__edvuaz = index;
       index = _unary__edvuaz + 1 | 0;
-      result[_unary__edvuaz] = element;
+      arr[tmp] = src[_unary__edvuaz];
     }
-    return result;
+    return dst;
+  }
+  function emptyArray() {
+    return [];
   }
   function copyArrayType(from, to) {
     if (from.$type$ !== undefined) {
@@ -13096,11 +13096,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
   }
   function KProperty0() {
   }
+  function KProperty() {
+  }
   function KMutableProperty1() {
   }
   function KMutableProperty0() {
-  }
-  function KProperty() {
   }
   function KMutableProperty() {
   }
@@ -16102,6 +16102,34 @@ if (typeof String.prototype.startsWith === 'undefined') {
   protoOf(Number_0).toChar_tavt71_k$ = function () {
     return numberToChar(numberToInt(this));
   };
+  function ReplaceWith(expression, imports) {
+    this.expression_1 = expression;
+    this.imports_1 = imports;
+  }
+  protoOf(ReplaceWith).get_expression_l5w7j5_k$ = function () {
+    return this.expression_1;
+  };
+  protoOf(ReplaceWith).get_imports_x49mdh_k$ = function () {
+    return this.imports_1;
+  };
+  protoOf(ReplaceWith).equals = function (other) {
+    if (!(other instanceof ReplaceWith))
+      return false;
+    var tmp0_other_with_cast = other instanceof ReplaceWith ? other : THROW_CCE();
+    if (!(this.expression_1 === tmp0_other_with_cast.expression_1))
+      return false;
+    if (!contentEquals_3(this.imports_1, tmp0_other_with_cast.imports_1))
+      return false;
+    return true;
+  };
+  protoOf(ReplaceWith).hashCode = function () {
+    var result = imul(getStringHashCode('expression'), 127) ^ getStringHashCode(this.expression_1);
+    result = result + (imul(getStringHashCode('imports'), 127) ^ hashCode_0(this.imports_1)) | 0;
+    return result;
+  };
+  protoOf(ReplaceWith).toString = function () {
+    return '@kotlin.ReplaceWith(' + 'expression=' + this.expression_1 + ', ' + 'imports=' + toString_1(this.imports_1) + ')';
+  };
   function Suppress(names) {
     this.names_1 = names;
   }
@@ -16121,26 +16149,6 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   protoOf(Suppress).toString = function () {
     return '@kotlin.Suppress(' + 'names=' + toString_1(this.names_1) + ')';
-  };
-  function SinceKotlin(version) {
-    this.version_1 = version;
-  }
-  protoOf(SinceKotlin).get_version_72w4j3_k$ = function () {
-    return this.version_1;
-  };
-  protoOf(SinceKotlin).equals = function (other) {
-    if (!(other instanceof SinceKotlin))
-      return false;
-    var tmp0_other_with_cast = other instanceof SinceKotlin ? other : THROW_CCE();
-    if (!(this.version_1 === tmp0_other_with_cast.version_1))
-      return false;
-    return true;
-  };
-  protoOf(SinceKotlin).hashCode = function () {
-    return imul(getStringHashCode('version'), 127) ^ getStringHashCode(this.version_1);
-  };
-  protoOf(SinceKotlin).toString = function () {
-    return '@kotlin.SinceKotlin(' + 'version=' + this.version_1 + ')';
   };
   function Deprecated(message, replaceWith, level) {
     replaceWith = replaceWith === VOID ? new ReplaceWith('', []) : replaceWith;
@@ -16179,85 +16187,25 @@ if (typeof String.prototype.startsWith === 'undefined') {
   protoOf(Deprecated).toString = function () {
     return '@kotlin.Deprecated(' + 'message=' + this.message_1 + ', ' + 'replaceWith=' + this.replaceWith_1.toString() + ', ' + 'level=' + this.level_1.toString() + ')';
   };
-  function ReplaceWith(expression, imports) {
-    this.expression_1 = expression;
-    this.imports_1 = imports;
+  function SinceKotlin(version) {
+    this.version_1 = version;
   }
-  protoOf(ReplaceWith).get_expression_l5w7j5_k$ = function () {
-    return this.expression_1;
+  protoOf(SinceKotlin).get_version_72w4j3_k$ = function () {
+    return this.version_1;
   };
-  protoOf(ReplaceWith).get_imports_x49mdh_k$ = function () {
-    return this.imports_1;
-  };
-  protoOf(ReplaceWith).equals = function (other) {
-    if (!(other instanceof ReplaceWith))
+  protoOf(SinceKotlin).equals = function (other) {
+    if (!(other instanceof SinceKotlin))
       return false;
-    var tmp0_other_with_cast = other instanceof ReplaceWith ? other : THROW_CCE();
-    if (!(this.expression_1 === tmp0_other_with_cast.expression_1))
-      return false;
-    if (!contentEquals_3(this.imports_1, tmp0_other_with_cast.imports_1))
+    var tmp0_other_with_cast = other instanceof SinceKotlin ? other : THROW_CCE();
+    if (!(this.version_1 === tmp0_other_with_cast.version_1))
       return false;
     return true;
   };
-  protoOf(ReplaceWith).hashCode = function () {
-    var result = imul(getStringHashCode('expression'), 127) ^ getStringHashCode(this.expression_1);
-    result = result + (imul(getStringHashCode('imports'), 127) ^ hashCode_0(this.imports_1)) | 0;
-    return result;
+  protoOf(SinceKotlin).hashCode = function () {
+    return imul(getStringHashCode('version'), 127) ^ getStringHashCode(this.version_1);
   };
-  protoOf(ReplaceWith).toString = function () {
-    return '@kotlin.ReplaceWith(' + 'expression=' + this.expression_1 + ', ' + 'imports=' + toString_1(this.imports_1) + ')';
-  };
-  function DeprecatedSinceKotlin(warningSince, errorSince, hiddenSince) {
-    warningSince = warningSince === VOID ? '' : warningSince;
-    errorSince = errorSince === VOID ? '' : errorSince;
-    hiddenSince = hiddenSince === VOID ? '' : hiddenSince;
-    this.warningSince_1 = warningSince;
-    this.errorSince_1 = errorSince;
-    this.hiddenSince_1 = hiddenSince;
-  }
-  protoOf(DeprecatedSinceKotlin).get_warningSince_szk795_k$ = function () {
-    return this.warningSince_1;
-  };
-  protoOf(DeprecatedSinceKotlin).get_errorSince_6p3nh7_k$ = function () {
-    return this.errorSince_1;
-  };
-  protoOf(DeprecatedSinceKotlin).get_hiddenSince_8z3cp_k$ = function () {
-    return this.hiddenSince_1;
-  };
-  protoOf(DeprecatedSinceKotlin).equals = function (other) {
-    if (!(other instanceof DeprecatedSinceKotlin))
-      return false;
-    var tmp0_other_with_cast = other instanceof DeprecatedSinceKotlin ? other : THROW_CCE();
-    if (!(this.warningSince_1 === tmp0_other_with_cast.warningSince_1))
-      return false;
-    if (!(this.errorSince_1 === tmp0_other_with_cast.errorSince_1))
-      return false;
-    if (!(this.hiddenSince_1 === tmp0_other_with_cast.hiddenSince_1))
-      return false;
-    return true;
-  };
-  protoOf(DeprecatedSinceKotlin).hashCode = function () {
-    var result = imul(getStringHashCode('warningSince'), 127) ^ getStringHashCode(this.warningSince_1);
-    result = result + (imul(getStringHashCode('errorSince'), 127) ^ getStringHashCode(this.errorSince_1)) | 0;
-    result = result + (imul(getStringHashCode('hiddenSince'), 127) ^ getStringHashCode(this.hiddenSince_1)) | 0;
-    return result;
-  };
-  protoOf(DeprecatedSinceKotlin).toString = function () {
-    return '@kotlin.DeprecatedSinceKotlin(' + 'warningSince=' + this.warningSince_1 + ', ' + 'errorSince=' + this.errorSince_1 + ', ' + 'hiddenSince=' + this.hiddenSince_1 + ')';
-  };
-  function PublishedApi() {
-  }
-  protoOf(PublishedApi).equals = function (other) {
-    if (!(other instanceof PublishedApi))
-      return false;
-    other instanceof PublishedApi || THROW_CCE();
-    return true;
-  };
-  protoOf(PublishedApi).hashCode = function () {
-    return 0;
-  };
-  protoOf(PublishedApi).toString = function () {
-    return '@kotlin.PublishedApi(' + ')';
+  protoOf(SinceKotlin).toString = function () {
+    return '@kotlin.SinceKotlin(' + 'version=' + this.version_1 + ')';
   };
   var DeprecationLevel_WARNING_instance;
   var DeprecationLevel_ERROR_instance;
@@ -16317,20 +16265,6 @@ if (typeof String.prototype.startsWith === 'undefined') {
   protoOf(ParameterName).toString = function () {
     return '@kotlin.ParameterName(' + 'name=' + this.name_1 + ')';
   };
-  function ExtensionFunctionType() {
-  }
-  protoOf(ExtensionFunctionType).equals = function (other) {
-    if (!(other instanceof ExtensionFunctionType))
-      return false;
-    other instanceof ExtensionFunctionType || THROW_CCE();
-    return true;
-  };
-  protoOf(ExtensionFunctionType).hashCode = function () {
-    return 0;
-  };
-  protoOf(ExtensionFunctionType).toString = function () {
-    return '@kotlin.ExtensionFunctionType(' + ')';
-  };
   function UnsafeVariance() {
   }
   protoOf(UnsafeVariance).equals = function (other) {
@@ -16358,6 +16292,72 @@ if (typeof String.prototype.startsWith === 'undefined') {
   };
   protoOf(DslMarker).toString = function () {
     return '@kotlin.DslMarker(' + ')';
+  };
+  function DeprecatedSinceKotlin(warningSince, errorSince, hiddenSince) {
+    warningSince = warningSince === VOID ? '' : warningSince;
+    errorSince = errorSince === VOID ? '' : errorSince;
+    hiddenSince = hiddenSince === VOID ? '' : hiddenSince;
+    this.warningSince_1 = warningSince;
+    this.errorSince_1 = errorSince;
+    this.hiddenSince_1 = hiddenSince;
+  }
+  protoOf(DeprecatedSinceKotlin).get_warningSince_szk795_k$ = function () {
+    return this.warningSince_1;
+  };
+  protoOf(DeprecatedSinceKotlin).get_errorSince_6p3nh7_k$ = function () {
+    return this.errorSince_1;
+  };
+  protoOf(DeprecatedSinceKotlin).get_hiddenSince_8z3cp_k$ = function () {
+    return this.hiddenSince_1;
+  };
+  protoOf(DeprecatedSinceKotlin).equals = function (other) {
+    if (!(other instanceof DeprecatedSinceKotlin))
+      return false;
+    var tmp0_other_with_cast = other instanceof DeprecatedSinceKotlin ? other : THROW_CCE();
+    if (!(this.warningSince_1 === tmp0_other_with_cast.warningSince_1))
+      return false;
+    if (!(this.errorSince_1 === tmp0_other_with_cast.errorSince_1))
+      return false;
+    if (!(this.hiddenSince_1 === tmp0_other_with_cast.hiddenSince_1))
+      return false;
+    return true;
+  };
+  protoOf(DeprecatedSinceKotlin).hashCode = function () {
+    var result = imul(getStringHashCode('warningSince'), 127) ^ getStringHashCode(this.warningSince_1);
+    result = result + (imul(getStringHashCode('errorSince'), 127) ^ getStringHashCode(this.errorSince_1)) | 0;
+    result = result + (imul(getStringHashCode('hiddenSince'), 127) ^ getStringHashCode(this.hiddenSince_1)) | 0;
+    return result;
+  };
+  protoOf(DeprecatedSinceKotlin).toString = function () {
+    return '@kotlin.DeprecatedSinceKotlin(' + 'warningSince=' + this.warningSince_1 + ', ' + 'errorSince=' + this.errorSince_1 + ', ' + 'hiddenSince=' + this.hiddenSince_1 + ')';
+  };
+  function ExtensionFunctionType() {
+  }
+  protoOf(ExtensionFunctionType).equals = function (other) {
+    if (!(other instanceof ExtensionFunctionType))
+      return false;
+    other instanceof ExtensionFunctionType || THROW_CCE();
+    return true;
+  };
+  protoOf(ExtensionFunctionType).hashCode = function () {
+    return 0;
+  };
+  protoOf(ExtensionFunctionType).toString = function () {
+    return '@kotlin.ExtensionFunctionType(' + ')';
+  };
+  function PublishedApi() {
+  }
+  protoOf(PublishedApi).equals = function (other) {
+    if (!(other instanceof PublishedApi))
+      return false;
+    other instanceof PublishedApi || THROW_CCE();
+    return true;
+  };
+  protoOf(PublishedApi).hashCode = function () {
+    return 0;
+  };
+  protoOf(PublishedApi).toString = function () {
+    return '@kotlin.PublishedApi(' + ')';
   };
   function DeprecationLevel_WARNING_getInstance() {
     DeprecationLevel_initEntries();
@@ -19322,70 +19322,8 @@ if (typeof String.prototype.startsWith === 'undefined') {
   }
   function MapWithDefault() {
   }
-  function mutableMapOf() {
+  function linkedMapOf() {
     return LinkedHashMap_init_$Create$();
-  }
-  function set(_this__u8e3s4, key, value) {
-    _this__u8e3s4.put_4fpzoq_k$(key, value);
-  }
-  function component2_1(_this__u8e3s4) {
-    return _this__u8e3s4.get_value_j01efc_k$();
-  }
-  function emptyMap() {
-    var tmp = EmptyMap_getInstance();
-    return isInterface(tmp, KtMap) ? tmp : THROW_CCE();
-  }
-  function getOrPut(_this__u8e3s4, key, defaultValue) {
-    var value = _this__u8e3s4.get_wei43m_k$(key);
-    var tmp;
-    if (value == null) {
-      var answer = defaultValue();
-      _this__u8e3s4.put_4fpzoq_k$(key, answer);
-      tmp = answer;
-    } else {
-      tmp = value;
-    }
-    return tmp;
-  }
-  function mapOf_0(pairs) {
-    return pairs.length > 0 ? toMap_0(pairs, LinkedHashMap_init_$Create$_0(mapCapacity(pairs.length))) : emptyMap();
-  }
-  function mapOf_1() {
-    return emptyMap();
-  }
-  function contains_12(_this__u8e3s4, key) {
-    // Inline function 'kotlin.collections.containsKey' call
-    return (isInterface(_this__u8e3s4, KtMap) ? _this__u8e3s4 : THROW_CCE()).containsKey_aw81wo_k$(key);
-  }
-  function iterator_0(_this__u8e3s4) {
-    return _this__u8e3s4.get_entries_p20ztl_k$().iterator_jk1svi_k$();
-  }
-  function plus_8(_this__u8e3s4, map) {
-    // Inline function 'kotlin.apply' call
-    var this_0 = LinkedHashMap_init_$Create$_2(_this__u8e3s4);
-    this_0.putAll_wgg6cj_k$(map);
-    return this_0;
-  }
-  function hashMapOf() {
-    return HashMap_init_$Create$_0();
-  }
-  function getValue(_this__u8e3s4, key) {
-    return getOrImplicitDefault(_this__u8e3s4, key);
-  }
-  function component1_1(_this__u8e3s4) {
-    return _this__u8e3s4.get_key_18j28a_k$();
-  }
-  function plusAssign(_this__u8e3s4, map) {
-    _this__u8e3s4.putAll_wgg6cj_k$(map);
-  }
-  function isNullOrEmpty_0(_this__u8e3s4) {
-    return _this__u8e3s4 == null || _this__u8e3s4.isEmpty_y1axqb_k$();
-  }
-  function isNotEmpty_6(_this__u8e3s4) {
-    return !_this__u8e3s4.isEmpty_y1axqb_k$();
-  }
-  function iterator_1(_this__u8e3s4) {
-    return _this__u8e3s4.get_entries_p20ztl_k$().iterator_jk1svi_k$();
   }
   function buildMap(capacity, builderAction) {
     // Inline function 'kotlin.collections.buildMapInternal' call
@@ -19394,18 +19332,34 @@ if (typeof String.prototype.startsWith === 'undefined') {
     builderAction(this_0);
     return this_0.build_nmwvly_k$();
   }
-  function toMutableMap(_this__u8e3s4) {
-    return LinkedHashMap_init_$Create$_2(_this__u8e3s4);
+  function hashMapOf() {
+    return HashMap_init_$Create$_0();
   }
-  function getOrElse_1(_this__u8e3s4, key, defaultValue) {
-    var tmp0_elvis_lhs = _this__u8e3s4.get_wei43m_k$(key);
-    return tmp0_elvis_lhs == null ? defaultValue() : tmp0_elvis_lhs;
+  function iterator_0(_this__u8e3s4) {
+    return _this__u8e3s4.get_entries_p20ztl_k$().iterator_jk1svi_k$();
   }
-  function get_3(_this__u8e3s4, key) {
-    return (isInterface(_this__u8e3s4, KtMap) ? _this__u8e3s4 : THROW_CCE()).get_wei43m_k$(key);
+  function plusAssign(_this__u8e3s4, map) {
+    _this__u8e3s4.putAll_wgg6cj_k$(map);
+  }
+  function mapOf_0(pairs) {
+    return pairs.length > 0 ? toMap_0(pairs, LinkedHashMap_init_$Create$_0(mapCapacity(pairs.length))) : emptyMap();
+  }
+  function contains_12(_this__u8e3s4, key) {
+    // Inline function 'kotlin.collections.containsKey' call
+    return (isInterface(_this__u8e3s4, KtMap) ? _this__u8e3s4 : THROW_CCE()).containsKey_aw81wo_k$(key);
+  }
+  function emptyMap() {
+    var tmp = EmptyMap_getInstance();
+    return isInterface(tmp, KtMap) ? tmp : THROW_CCE();
+  }
+  function isNotEmpty_6(_this__u8e3s4) {
+    return !_this__u8e3s4.isEmpty_y1axqb_k$();
   }
   function remove(_this__u8e3s4, key) {
     return (isInterface(_this__u8e3s4, KtMutableMap) ? _this__u8e3s4 : THROW_CCE()).remove_gppy8k_k$(key);
+  }
+  function toMutableMap(_this__u8e3s4) {
+    return LinkedHashMap_init_$Create$_2(_this__u8e3s4);
   }
   function toMap(_this__u8e3s4) {
     if (isInterface(_this__u8e3s4, Collection)) {
@@ -19432,6 +19386,24 @@ if (typeof String.prototype.startsWith === 'undefined') {
     }
     return optimizeReadOnlyMap(toMap_1(_this__u8e3s4, LinkedHashMap_init_$Create$()));
   }
+  function getOrPut(_this__u8e3s4, key, defaultValue) {
+    var value = _this__u8e3s4.get_wei43m_k$(key);
+    var tmp;
+    if (value == null) {
+      var answer = defaultValue();
+      _this__u8e3s4.put_4fpzoq_k$(key, answer);
+      tmp = answer;
+    } else {
+      tmp = value;
+    }
+    return tmp;
+  }
+  function iterator_1(_this__u8e3s4) {
+    return _this__u8e3s4.get_entries_p20ztl_k$().iterator_jk1svi_k$();
+  }
+  function containsKey(_this__u8e3s4, key) {
+    return (isInterface(_this__u8e3s4, KtMap) ? _this__u8e3s4 : THROW_CCE()).containsKey_aw81wo_k$(key);
+  }
   function mapValues(_this__u8e3s4, transform) {
     // Inline function 'kotlin.collections.mapValuesTo' call
     var destination = LinkedHashMap_init_$Create$_0(mapCapacity(_this__u8e3s4.get_size_woubt6_k$()));
@@ -19442,6 +19414,68 @@ if (typeof String.prototype.startsWith === 'undefined') {
       var tmp$ret$0 = element.get_key_18j28a_k$();
       destination.put_4fpzoq_k$(tmp$ret$0, transform(element));
     }
+    return destination;
+  }
+  function getOrElseNullable(_this__u8e3s4, key, defaultValue) {
+    var value = _this__u8e3s4.get_wei43m_k$(key);
+    if (value == null && !_this__u8e3s4.containsKey_aw81wo_k$(key)) {
+      return defaultValue();
+    } else {
+      return (value == null ? true : !(value == null)) ? value : THROW_CCE();
+    }
+  }
+  function mapOf_1() {
+    return emptyMap();
+  }
+  function mutableMapOf() {
+    return LinkedHashMap_init_$Create$();
+  }
+  function ifEmpty_0(_this__u8e3s4, defaultValue) {
+    return _this__u8e3s4.isEmpty_y1axqb_k$() ? defaultValue() : _this__u8e3s4;
+  }
+  function component1_1(_this__u8e3s4) {
+    return _this__u8e3s4.get_key_18j28a_k$();
+  }
+  function get_3(_this__u8e3s4, key) {
+    return (isInterface(_this__u8e3s4, KtMap) ? _this__u8e3s4 : THROW_CCE()).get_wei43m_k$(key);
+  }
+  function component2_1(_this__u8e3s4) {
+    return _this__u8e3s4.get_value_j01efc_k$();
+  }
+  function minusAssign(_this__u8e3s4, key) {
+    _this__u8e3s4.remove_gppy8k_k$(key);
+  }
+  function isNullOrEmpty_0(_this__u8e3s4) {
+    return _this__u8e3s4 == null || _this__u8e3s4.isEmpty_y1axqb_k$();
+  }
+  function set(_this__u8e3s4, key, value) {
+    _this__u8e3s4.put_4fpzoq_k$(key, value);
+  }
+  function plusAssign_0(_this__u8e3s4, pair) {
+    _this__u8e3s4.put_4fpzoq_k$(pair.get_first_irdx8n_k$(), pair.get_second_jf7fjx_k$());
+  }
+  function plus_8(_this__u8e3s4, map) {
+    // Inline function 'kotlin.apply' call
+    var this_0 = LinkedHashMap_init_$Create$_2(_this__u8e3s4);
+    this_0.putAll_wgg6cj_k$(map);
+    return this_0;
+  }
+  function hashMapOf_0(pairs) {
+    // Inline function 'kotlin.apply' call
+    var this_0 = HashMap_init_$Create$_2(mapCapacity(pairs.length));
+    putAll(this_0, pairs);
+    return this_0;
+  }
+  function getOrElse_1(_this__u8e3s4, key, defaultValue) {
+    var tmp0_elvis_lhs = _this__u8e3s4.get_wei43m_k$(key);
+    return tmp0_elvis_lhs == null ? defaultValue() : tmp0_elvis_lhs;
+  }
+  function getValue(_this__u8e3s4, key) {
+    return getOrImplicitDefault(_this__u8e3s4, key);
+  }
+  function toMap_0(_this__u8e3s4, destination) {
+    // Inline function 'kotlin.apply' call
+    putAll(destination, _this__u8e3s4);
     return destination;
   }
   function _get_serialVersionUID__fhggm9_0($this) {
@@ -19520,14 +19554,6 @@ if (typeof String.prototype.startsWith === 'undefined') {
       new EmptyMap();
     return EmptyMap_instance;
   }
-  function toMap_0(_this__u8e3s4, destination) {
-    // Inline function 'kotlin.apply' call
-    putAll(destination, _this__u8e3s4);
-    return destination;
-  }
-  function containsKey(_this__u8e3s4, key) {
-    return (isInterface(_this__u8e3s4, KtMap) ? _this__u8e3s4 : THROW_CCE()).containsKey_aw81wo_k$(key);
-  }
   function toMap_1(_this__u8e3s4, destination) {
     // Inline function 'kotlin.apply' call
     putAll_0(destination, _this__u8e3s4);
@@ -19579,32 +19605,6 @@ if (typeof String.prototype.startsWith === 'undefined') {
       var value = _destruct__k2r9zo.component2_7eebsb_k$();
       _this__u8e3s4.put_4fpzoq_k$(key, value);
     }
-  }
-  function hashMapOf_0(pairs) {
-    // Inline function 'kotlin.apply' call
-    var this_0 = HashMap_init_$Create$_2(mapCapacity(pairs.length));
-    putAll(this_0, pairs);
-    return this_0;
-  }
-  function plusAssign_0(_this__u8e3s4, pair) {
-    _this__u8e3s4.put_4fpzoq_k$(pair.get_first_irdx8n_k$(), pair.get_second_jf7fjx_k$());
-  }
-  function getOrElseNullable(_this__u8e3s4, key, defaultValue) {
-    var value = _this__u8e3s4.get_wei43m_k$(key);
-    if (value == null && !_this__u8e3s4.containsKey_aw81wo_k$(key)) {
-      return defaultValue();
-    } else {
-      return (value == null ? true : !(value == null)) ? value : THROW_CCE();
-    }
-  }
-  function ifEmpty_0(_this__u8e3s4, defaultValue) {
-    return _this__u8e3s4.isEmpty_y1axqb_k$() ? defaultValue() : _this__u8e3s4;
-  }
-  function minusAssign(_this__u8e3s4, key) {
-    _this__u8e3s4.remove_gppy8k_k$(key);
-  }
-  function linkedMapOf() {
-    return LinkedHashMap_init_$Create$();
   }
   function removeFirst(_this__u8e3s4) {
     var tmp;
@@ -27862,11 +27862,6 @@ if (typeof String.prototype.startsWith === 'undefined') {
   function get_isInitialized(_this__u8e3s4) {
     throw new NotImplementedError('Implementation is intrinsic');
   }
-  function getValue_1(_this__u8e3s4, thisRef, property) {
-    return _this__u8e3s4.get_value_j01efc_k$();
-  }
-  function Lazy() {
-  }
   var LazyThreadSafetyMode_SYNCHRONIZED_instance;
   var LazyThreadSafetyMode_PUBLICATION_instance;
   var LazyThreadSafetyMode_NONE_instance;
@@ -27904,6 +27899,11 @@ if (typeof String.prototype.startsWith === 'undefined') {
   var $ENTRIES_10;
   function LazyThreadSafetyMode(name, ordinal) {
     Enum.call(this, name, ordinal);
+  }
+  function Lazy() {
+  }
+  function getValue_1(_this__u8e3s4, thisRef, property) {
+    return _this__u8e3s4.get_value_j01efc_k$();
   }
   function _set_initializer__9jqmcd($this, _set____db54di) {
     $this.initializer_1 = _set____db54di;

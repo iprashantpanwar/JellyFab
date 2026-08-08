@@ -7,7 +7,12 @@ plugins {
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.composeHotReload)
+    alias(libs.plugins.vanniktechPublish)
+    alias(libs.plugins.dokka)
 }
+
+group = property("GROUP") as String
+version = property("VERSION_NAME") as String
 
 kotlin {
 
@@ -15,7 +20,7 @@ kotlin {
     // which platforms this KMP module supports.
     // See: https://kotlinlang.org/docs/multiplatform-discover-project.html#targets
     androidLibrary {
-        namespace = "com.github.iprashantpanwar.jellyfab"
+        namespace = "io.github.iprashantpanwar.jellyfab"
         compileSdk = 36
         minSdk = 24
 
@@ -36,7 +41,7 @@ kotlin {
     // A step-by-step guide on how to include this library in an XCode
     // project can be found here:
     // https://developer.android.com/kotlin/multiplatform/migrate
-    val xcfName = "jellyfabKit"
+    val xcfName = "jellyfab"
 
     iosX64 {
         binaries.framework {
@@ -55,6 +60,9 @@ kotlin {
             baseName = xcfName
         }
     }
+
+    // ensures every machine (including GitHub Actions) builds with the same Java toolchain
+    jvmToolchain(17)
 
     jvm()
 
@@ -123,5 +131,40 @@ kotlin {
         val jvmMain by getting
         val jsMain by getting
         val wasmJsMain by getting
+    }
+}
+
+mavenPublishing {
+
+    publishToMavenCentral()
+
+    signAllPublications()
+
+    pom {
+        name.set("JellyFab")
+        description.set("A physics-driven Floating Action Button library for Compose Multiplatform.")
+        inceptionYear.set("2026")
+        url.set("https://github.com/iprashantpanwar/JellyFab")
+
+        licenses {
+            license {
+                name.set("MIT License")
+                url.set("https://opensource.org/licenses/MIT")
+            }
+        }
+
+        developers {
+            developer {
+                id.set("iprashantpanwar")
+                name.set("Prashant Panwar")
+                url.set("https://github.com/iprashantpanwar")
+            }
+        }
+
+        scm {
+            url.set("https://github.com/iprashantpanwar/JellyFab")
+            connection.set("scm:git:git://github.com/iprashantpanwar/JellyFab.git")
+            developerConnection.set("scm:git:ssh://git@github.com/iprashantpanwar/JellyFab.git")
+        }
     }
 }

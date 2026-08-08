@@ -233,12 +233,12 @@
   initMetadataForLambda(collapseSecondaryLayer$slambda, CoroutineImpl, [CoroutineImpl], [1]);
   initMetadataForCoroutine($playDoubleBounceCOROUTINE$, CoroutineImpl);
   //endregion
-  var jellyfab_jellyfab_generated_resources_Res_drawable$stable;
-  var jellyfab_jellyfab_generated_resources_Res_string$stable;
-  var jellyfab_jellyfab_generated_resources_Res_array$stable;
-  var jellyfab_jellyfab_generated_resources_Res_plurals$stable;
-  var jellyfab_jellyfab_generated_resources_Res_font$stable;
-  var jellyfab_jellyfab_generated_resources_Res$stable;
+  var io_github_iprashantpanwar_jellyfab_generated_resources_Res_drawable$stable;
+  var io_github_iprashantpanwar_jellyfab_generated_resources_Res_string$stable;
+  var io_github_iprashantpanwar_jellyfab_generated_resources_Res_array$stable;
+  var io_github_iprashantpanwar_jellyfab_generated_resources_Res_plurals$stable;
+  var io_github_iprashantpanwar_jellyfab_generated_resources_Res_font$stable;
+  var io_github_iprashantpanwar_jellyfab_generated_resources_Res$stable;
   function drawable() {
     drawable_instance = this;
   }
@@ -288,10 +288,10 @@
     Res_instance = this;
   }
   protoOf(Res).readBytes_74yvde_k$ = function (path, $completion) {
-    return readResourceBytes('composeResources/jellyfab.jellyfab.generated.resources/' + path, $completion);
+    return readResourceBytes('composeResources/io.github.iprashantpanwar.jellyfab.generated.resources/' + path, $completion);
   };
   protoOf(Res).getUri_3gtoqs_k$ = function (path) {
-    return getResourceUri('composeResources/jellyfab.jellyfab.generated.resources/' + path);
+    return getResourceUri('composeResources/io.github.iprashantpanwar.jellyfab.generated.resources/' + path);
   };
   var Res_instance;
   function Res_getInstance() {
@@ -4781,12 +4781,12 @@
     return this_0;
   }
   //region block: init
-  jellyfab_jellyfab_generated_resources_Res_drawable$stable = 0;
-  jellyfab_jellyfab_generated_resources_Res_string$stable = 0;
-  jellyfab_jellyfab_generated_resources_Res_array$stable = 0;
-  jellyfab_jellyfab_generated_resources_Res_plurals$stable = 0;
-  jellyfab_jellyfab_generated_resources_Res_font$stable = 0;
-  jellyfab_jellyfab_generated_resources_Res$stable = 0;
+  io_github_iprashantpanwar_jellyfab_generated_resources_Res_drawable$stable = 0;
+  io_github_iprashantpanwar_jellyfab_generated_resources_Res_string$stable = 0;
+  io_github_iprashantpanwar_jellyfab_generated_resources_Res_array$stable = 0;
+  io_github_iprashantpanwar_jellyfab_generated_resources_Res_plurals$stable = 0;
+  io_github_iprashantpanwar_jellyfab_generated_resources_Res_font$stable = 0;
+  io_github_iprashantpanwar_jellyfab_generated_resources_Res$stable = 0;
   _CloseIcon = null;
   io_github_iprashantpanwar_jellyfab_JellyFabConfig$stable = 0;
   io_github_iprashantpanwar_jellyfab_JellyFabItem$stable = 0;

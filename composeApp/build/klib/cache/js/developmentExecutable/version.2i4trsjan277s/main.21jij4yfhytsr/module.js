@@ -42,7 +42,7 @@
     }
     globalThis['JellyFab:composeApp'] = factory(typeof globalThis['JellyFab:composeApp'] === 'undefined' ? {} : globalThis['JellyFab:composeApp'], globalThis['kotlin-kotlin-stdlib'], globalThis['components-resources-library'], globalThis['androidx-compose-runtime-runtime'], globalThis['compose-multiplatform-core-compose-ui-ui'], globalThis['compose-multiplatform-core-compose-foundation-foundation-layout'], globalThis['compose-multiplatform-core-compose-material3-material3'], globalThis['compose-multiplatform-core-compose-ui-ui-graphics'], globalThis['androidx-compose-runtime-runtime-saveable'], globalThis['JellyFab-jellyfab'], globalThis['compose-multiplatform-core-compose-foundation-foundation'], globalThis['compose-multiplatform-core-compose-ui-ui-unit'], globalThis['compose-multiplatform-core-compose-ui-ui-text']);
   }
-}(function (_, kotlin_kotlin, kotlin_components_resources_library, kotlin_androidx_compose_runtime_runtime, kotlin_org_jetbrains_compose_ui_ui, kotlin_org_jetbrains_compose_foundation_foundation_layout, kotlin_org_jetbrains_compose_material3_material3, kotlin_org_jetbrains_compose_ui_ui_graphics, kotlin_androidx_compose_runtime_runtime_saveable, kotlin_JellyFab_jellyfab, kotlin_org_jetbrains_compose_foundation_foundation, kotlin_org_jetbrains_compose_ui_ui_unit, kotlin_org_jetbrains_compose_ui_ui_text) {
+}(function (_, kotlin_kotlin, kotlin_components_resources_library, kotlin_androidx_compose_runtime_runtime, kotlin_org_jetbrains_compose_ui_ui, kotlin_org_jetbrains_compose_foundation_foundation_layout, kotlin_org_jetbrains_compose_material3_material3, kotlin_org_jetbrains_compose_ui_ui_graphics, kotlin_androidx_compose_runtime_runtime_saveable, kotlin_io_github_iprashantpanwar_jellyfab, kotlin_org_jetbrains_compose_foundation_foundation, kotlin_org_jetbrains_compose_ui_ui_unit, kotlin_org_jetbrains_compose_ui_ui_text) {
   'use strict';
   //region block: imports
   var imul = Math.imul;
@@ -84,9 +84,9 @@
   var contains = kotlin_kotlin.$_$.bj;
   var isBlank = kotlin_kotlin.$_$.mj;
   var vectorResource = kotlin_components_resources_library.$_$.f;
-  var JellyFabItem = kotlin_JellyFab_jellyfab.$_$.a;
+  var JellyFabItem = kotlin_io_github_iprashantpanwar_jellyfab.$_$.a;
   var listOf = kotlin_kotlin.$_$.wa;
-  var rememberJellyFabState = kotlin_JellyFab_jellyfab.$_$.c;
+  var rememberJellyFabState = kotlin_io_github_iprashantpanwar_jellyfab.$_$.c;
   var Companion_getInstance_2 = kotlin_org_jetbrains_compose_ui_ui_graphics.$_$.n4;
   var background = kotlin_org_jetbrains_compose_foundation_foundation.$_$.p1;
   var Companion_getInstance_3 = kotlin_org_jetbrains_compose_ui_ui.$_$.zb;
@@ -109,7 +109,7 @@
   var height = kotlin_org_jetbrains_compose_foundation_foundation_layout.$_$.s;
   var Spacer = kotlin_org_jetbrains_compose_foundation_foundation_layout.$_$.f;
   var LazyColumn = kotlin_org_jetbrains_compose_foundation_foundation.$_$.t;
-  var JellyFab = kotlin_JellyFab_jellyfab.$_$.b;
+  var JellyFab = kotlin_io_github_iprashantpanwar_jellyfab.$_$.b;
   var fillMaxWidth = kotlin_org_jetbrains_compose_foundation_foundation_layout.$_$.q;
   var padding = kotlin_org_jetbrains_compose_foundation_foundation_layout.$_$.c1;
   var Companion_getInstance_5 = kotlin_org_jetbrains_compose_ui_ui_text.$_$.q3;
@@ -1864,7 +1864,7 @@
   function _init_properties_ChatListDemoScreen_kt__uinghx() {
     if (!properties_initialized_ChatListDemoScreen_kt_13fb47) {
       properties_initialized_ChatListDemoScreen_kt_13fb47 = true;
-      chats = listOf([new ChatPreview('Parth Patel', 'What are you doing tonight?', '12:35PM', get_avatar_2(drawable_getInstance())), new ChatPreview('Selin Daria', 'typing...', '12:32PM', get_avatar_1(drawable_getInstance())), new ChatPreview('John Oliver', 'Yes, it is really awesome!', '09:47PM', get_avatar_3(drawable_getInstance())), new ChatPreview('Mary Jane', 'Did you see?', 'Yesterday', get_avatar_4(drawable_getInstance())), new ChatPreview('Joseph William', "Hi! I'm sorry, I forgot about it.", 'Yesterday', get_avatar_5(drawable_getInstance())), new ChatPreview('Michael Darling', "Let's catchup tomorrow!", '08/06/26', get_avatar_6(drawable_getInstance())), new ChatPreview('Marcus Santos', "Call Fred, he's waiting.", '08/06/25', get_avatar_7(drawable_getInstance())), new ChatPreview('Mei Wong', 'Hey! Call me back once free.', '08/06/26', get_avatar_8(drawable_getInstance())), new ChatPreview('Min-seo', 'That was fun.', '08/06/26', get_avatar_9(drawable_getInstance())), new ChatPreview('Sebasti\xE1n Rodr\xEDguez', "Let's hangout coming weekend.", '08/06/26', get_avatar_10(drawable_getInstance())), new ChatPreview('Ada Gumede', 'Yes, that was so cool.', '08/06/26', get_avatar_11(drawable_getInstance()))]);
+      chats = listOf([new ChatPreview('Selin Daria', 'typing...', '12:32PM', get_avatar_1(drawable_getInstance())), new ChatPreview('Parth Patel', 'What are you doing tonight?', '12:35PM', get_avatar_2(drawable_getInstance())), new ChatPreview('John Oliver', 'Yes, it is really awesome!', '09:47PM', get_avatar_3(drawable_getInstance())), new ChatPreview('Mary Jane', 'Did you see?', 'Yesterday', get_avatar_4(drawable_getInstance())), new ChatPreview('Joseph William', "Hi! I'm sorry, I forgot about it.", 'Yesterday', get_avatar_5(drawable_getInstance())), new ChatPreview('Michael Darling', "Let's catchup tomorrow!", '08/06/26', get_avatar_6(drawable_getInstance())), new ChatPreview('Marcus Santos', "Call Fred, he's waiting.", '08/06/25', get_avatar_7(drawable_getInstance())), new ChatPreview('Mei Wong', 'Hey! Call me back once free.', '08/06/26', get_avatar_8(drawable_getInstance())), new ChatPreview('Min-seo', 'That was fun.', '08/06/26', get_avatar_9(drawable_getInstance())), new ChatPreview('Sebasti\xE1n Rodr\xEDguez', "Let's hangout coming weekend.", '08/06/26', get_avatar_10(drawable_getInstance())), new ChatPreview('Ada Gumede', 'Yes, that was so cool.', '08/06/26', get_avatar_11(drawable_getInstance()))]);
     }
   }
   var io_github_iprashantpanwar_composeApp_ChatPreview$stable;

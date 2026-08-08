@@ -1,8 +1,8 @@
 (function (factory) {
   if (typeof define === 'function' && define.amd)
-    define(['exports', './kotlin-kotlin-stdlib.js', './androidx-compose-runtime-runtime.js', './compose-multiplatform-core-compose-ui-ui.js', './compose-multiplatform-core-compose-ui-ui-graphics.js', './compose-multiplatform-core-compose-ui-ui-unit.js', './kotlinx-coroutines-core.js', './compose-multiplatform-core-compose-ui-ui-text.js', './compose-multiplatform-core-compose-foundation-foundation.js', './compose-multiplatform-core-compose-ui-ui-geometry.js', './skiko-kjs.js'], factory);
+    define(['exports', './kotlin-kotlin-stdlib.js', './androidx-compose-runtime-runtime.js', './compose-multiplatform-core-compose-ui-ui-graphics.js', './compose-multiplatform-core-compose-ui-ui.js', './compose-multiplatform-core-compose-ui-ui-unit.js', './kotlinx-coroutines-core.js', './compose-multiplatform-core-compose-ui-ui-text.js', './compose-multiplatform-core-compose-foundation-foundation.js', './compose-multiplatform-core-compose-ui-ui-geometry.js', './skiko-kjs.js'], factory);
   else if (typeof exports === 'object')
-    factory(module.exports, require('./kotlin-kotlin-stdlib.js'), require('./androidx-compose-runtime-runtime.js'), require('./compose-multiplatform-core-compose-ui-ui.js'), require('./compose-multiplatform-core-compose-ui-ui-graphics.js'), require('./compose-multiplatform-core-compose-ui-ui-unit.js'), require('./kotlinx-coroutines-core.js'), require('./compose-multiplatform-core-compose-ui-ui-text.js'), require('./compose-multiplatform-core-compose-foundation-foundation.js'), require('./compose-multiplatform-core-compose-ui-ui-geometry.js'), require('./skiko-kjs.js'));
+    factory(module.exports, require('./kotlin-kotlin-stdlib.js'), require('./androidx-compose-runtime-runtime.js'), require('./compose-multiplatform-core-compose-ui-ui-graphics.js'), require('./compose-multiplatform-core-compose-ui-ui.js'), require('./compose-multiplatform-core-compose-ui-ui-unit.js'), require('./kotlinx-coroutines-core.js'), require('./compose-multiplatform-core-compose-ui-ui-text.js'), require('./compose-multiplatform-core-compose-foundation-foundation.js'), require('./compose-multiplatform-core-compose-ui-ui-geometry.js'), require('./skiko-kjs.js'));
   else {
     if (typeof globalThis['kotlin-kotlin-stdlib'] === 'undefined') {
       throw new Error("Error loading module 'components-resources-library'. Its dependency 'kotlin-kotlin-stdlib' was not found. Please, check whether 'kotlin-kotlin-stdlib' is loaded prior to 'components-resources-library'.");
@@ -10,11 +10,11 @@
     if (typeof globalThis['androidx-compose-runtime-runtime'] === 'undefined') {
       throw new Error("Error loading module 'components-resources-library'. Its dependency 'androidx-compose-runtime-runtime' was not found. Please, check whether 'androidx-compose-runtime-runtime' is loaded prior to 'components-resources-library'.");
     }
-    if (typeof globalThis['compose-multiplatform-core-compose-ui-ui'] === 'undefined') {
-      throw new Error("Error loading module 'components-resources-library'. Its dependency 'compose-multiplatform-core-compose-ui-ui' was not found. Please, check whether 'compose-multiplatform-core-compose-ui-ui' is loaded prior to 'components-resources-library'.");
-    }
     if (typeof globalThis['compose-multiplatform-core-compose-ui-ui-graphics'] === 'undefined') {
       throw new Error("Error loading module 'components-resources-library'. Its dependency 'compose-multiplatform-core-compose-ui-ui-graphics' was not found. Please, check whether 'compose-multiplatform-core-compose-ui-ui-graphics' is loaded prior to 'components-resources-library'.");
+    }
+    if (typeof globalThis['compose-multiplatform-core-compose-ui-ui'] === 'undefined') {
+      throw new Error("Error loading module 'components-resources-library'. Its dependency 'compose-multiplatform-core-compose-ui-ui' was not found. Please, check whether 'compose-multiplatform-core-compose-ui-ui' is loaded prior to 'components-resources-library'.");
     }
     if (typeof globalThis['compose-multiplatform-core-compose-ui-ui-unit'] === 'undefined') {
       throw new Error("Error loading module 'components-resources-library'. Its dependency 'compose-multiplatform-core-compose-ui-ui-unit' was not found. Please, check whether 'compose-multiplatform-core-compose-ui-ui-unit' is loaded prior to 'components-resources-library'.");
@@ -34,9 +34,9 @@
     if (typeof globalThis['skiko-kjs'] === 'undefined') {
       throw new Error("Error loading module 'components-resources-library'. Its dependency 'skiko-kjs' was not found. Please, check whether 'skiko-kjs' is loaded prior to 'components-resources-library'.");
     }
-    globalThis['components-resources-library'] = factory(typeof globalThis['components-resources-library'] === 'undefined' ? {} : globalThis['components-resources-library'], globalThis['kotlin-kotlin-stdlib'], globalThis['androidx-compose-runtime-runtime'], globalThis['compose-multiplatform-core-compose-ui-ui'], globalThis['compose-multiplatform-core-compose-ui-ui-graphics'], globalThis['compose-multiplatform-core-compose-ui-ui-unit'], globalThis['kotlinx-coroutines-core'], globalThis['compose-multiplatform-core-compose-ui-ui-text'], globalThis['compose-multiplatform-core-compose-foundation-foundation'], globalThis['compose-multiplatform-core-compose-ui-ui-geometry'], globalThis['skiko-kjs']);
+    globalThis['components-resources-library'] = factory(typeof globalThis['components-resources-library'] === 'undefined' ? {} : globalThis['components-resources-library'], globalThis['kotlin-kotlin-stdlib'], globalThis['androidx-compose-runtime-runtime'], globalThis['compose-multiplatform-core-compose-ui-ui-graphics'], globalThis['compose-multiplatform-core-compose-ui-ui'], globalThis['compose-multiplatform-core-compose-ui-ui-unit'], globalThis['kotlinx-coroutines-core'], globalThis['compose-multiplatform-core-compose-ui-ui-text'], globalThis['compose-multiplatform-core-compose-foundation-foundation'], globalThis['compose-multiplatform-core-compose-ui-ui-geometry'], globalThis['skiko-kjs']);
   }
-}(function (_, kotlin_kotlin, kotlin_androidx_compose_runtime_runtime, kotlin_org_jetbrains_compose_ui_ui, kotlin_org_jetbrains_compose_ui_ui_graphics, kotlin_org_jetbrains_compose_ui_ui_unit, kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core, kotlin_org_jetbrains_compose_ui_ui_text, kotlin_org_jetbrains_compose_foundation_foundation, kotlin_org_jetbrains_compose_ui_ui_geometry, kotlin_org_jetbrains_skiko_skiko) {
+}(function (_, kotlin_kotlin, kotlin_androidx_compose_runtime_runtime, kotlin_org_jetbrains_compose_ui_ui_graphics, kotlin_org_jetbrains_compose_ui_ui, kotlin_org_jetbrains_compose_ui_ui_unit, kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core, kotlin_org_jetbrains_compose_ui_ui_text, kotlin_org_jetbrains_compose_foundation_foundation, kotlin_org_jetbrains_compose_ui_ui_geometry, kotlin_org_jetbrains_skiko_skiko) {
   'use strict';
   //region block: imports
   var imul = Math.imul;
@@ -45,18 +45,18 @@
   var VOID = kotlin_kotlin.$_$.e;
   var KProperty0 = kotlin_kotlin.$_$.ji;
   var getPropertyCallableRef = kotlin_kotlin.$_$.sf;
-  var initMetadataForInterface = kotlin_kotlin.$_$.zf;
   var traceEventStart = kotlin_androidx_compose_runtime_runtime.$_$.q2;
   var isTraceInProgress = kotlin_androidx_compose_runtime_runtime.$_$.x1;
-  var get_LocalDensity = kotlin_org_jetbrains_compose_ui_ui.$_$.v6;
   var sourceInformationMarkerStart = kotlin_androidx_compose_runtime_runtime.$_$.l2;
   var sourceInformationMarkerEnd = kotlin_androidx_compose_runtime_runtime.$_$.k2;
   var Companion_getInstance = kotlin_androidx_compose_runtime_runtime.$_$.z2;
   var THROW_CCE = kotlin_kotlin.$_$.vl;
-  var traceEventEnd = kotlin_androidx_compose_runtime_runtime.$_$.p2;
   var BitmapPainter = kotlin_org_jetbrains_compose_ui_ui_graphics.$_$.g;
+  var traceEventEnd = kotlin_androidx_compose_runtime_runtime.$_$.p2;
   var endsWith = kotlin_kotlin.$_$.gj;
   var rememberVectorPainter = kotlin_org_jetbrains_compose_ui_ui.$_$.z;
+  var initMetadataForInterface = kotlin_kotlin.$_$.zf;
+  var get_LocalDensity = kotlin_org_jetbrains_compose_ui_ui.$_$.v6;
   var getLocalDelegateReference = kotlin_kotlin.$_$.qf;
   var ImageBitmap = kotlin_org_jetbrains_compose_ui_ui_graphics.$_$.w;
   var _Dp___init__impl__ms3zkb = kotlin_org_jetbrains_compose_ui_ui_unit.$_$.t2;
@@ -74,11 +74,11 @@
   var THROW_IAE = kotlin_kotlin.$_$.wl;
   var enumEntries = kotlin_kotlin.$_$.be;
   var Enum = kotlin_kotlin.$_$.il;
-  var Annotation = kotlin_kotlin.$_$.al;
   var toString = kotlin_kotlin.$_$.bh;
   var hashCode = kotlin_kotlin.$_$.uf;
   var equals = kotlin_kotlin.$_$.nf;
   var equalsLong = kotlin_kotlin.$_$.me;
+  var Annotation = kotlin_kotlin.$_$.al;
   var CoroutineScope = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.z1;
   var isInterface = kotlin_kotlin.$_$.kg;
   var CoroutineStart_LAZY_getInstance = kotlin_org_jetbrains_kotlinx_kotlinx_coroutines_core.$_$.d;
@@ -208,9 +208,9 @@
   initMetadataForClass(Vector, 'Vector', VOID, VOID, [ImageCache]);
   initMetadataForClass(Svg, 'Svg', VOID, VOID, [ImageCache]);
   initMetadataForLambda(vectorResource$slambda, CoroutineImpl, [CoroutineImpl], [1]);
-  initMetadataForLambda(loadImage$slambda, CoroutineImpl, [CoroutineImpl], [0]);
   initMetadataForLambda(svgPainter$slambda, CoroutineImpl, [CoroutineImpl], [1]);
   initMetadataForLambda(imageResource$slambda, CoroutineImpl, [CoroutineImpl], [1]);
+  initMetadataForLambda(loadImage$slambda, CoroutineImpl, [CoroutineImpl], [0]);
   initMetadataForClass(PluralStringResource, 'PluralStringResource', VOID, Resource);
   initMetadataForInterface(Qualifier, 'Qualifier');
   initMetadataForClass(LanguageQualifier, 'LanguageQualifier', VOID, VOID, [Qualifier]);
@@ -219,8 +219,8 @@
   initMetadataForClass(ThemeQualifier, 'ThemeQualifier', VOID, Enum, [Qualifier, Enum]);
   initMetadataForCompanion(Companion_0);
   initMetadataForClass(DensityQualifier, 'DensityQualifier', VOID, Enum, [Qualifier, Enum]);
-  initMetadataForClass(InternalResourceApi, 'InternalResourceApi', VOID, VOID, [Annotation]);
   initMetadataForClass(ResourceItem, 'ResourceItem');
+  initMetadataForClass(InternalResourceApi, 'InternalResourceApi', VOID, VOID, [Annotation]);
   initMetadataForClass(ExperimentalResourceApi, 'ExperimentalResourceApi', VOID, VOID, [Annotation]);
   initMetadataForLambda(AsyncCache$getOrLoad$slambda$slambda, CoroutineImpl, [CoroutineImpl], [1]);
   initMetadataForLambda(AsyncCache$getOrLoad$slambda, CoroutineImpl, [CoroutineImpl], [1]);
@@ -304,6 +304,66 @@
   var org_jetbrains_compose_resources_ImageCache_Bitmap$stable;
   var org_jetbrains_compose_resources_ImageCache_Vector$stable;
   var org_jetbrains_compose_resources_ImageCache_Svg$stable;
+  function painterResource(resource, $composer, $changed) {
+    _init_properties_ImageResources_kt__6e1y7e();
+    var $composer_0 = $composer;
+    $composer_0.startReplaceGroup_5hh8aj_k$(-1508925367);
+    if (isTraceInProgress()) {
+      traceEventStart(-1508925367, $changed, -1, 'org.jetbrains.compose.resources.painterResource (ImageResources.kt:35)');
+    }
+    // Inline function 'androidx.compose.runtime.CompositionLocal.current' call
+    var this_0 = get_LocalComposeEnvironment();
+    var $composer_1 = $composer_0;
+    sourceInformationMarkerStart($composer_1, 2023513938, 'CC(<get-current>):CompositionLocal.kt#9igjgp');
+    var tmp0 = $composer_1.consume_ebzcrh_k$(this_0);
+    sourceInformationMarkerEnd($composer_1);
+    var environment = tmp0.rememberEnvironment_3peo8j_k$($composer_0, 0);
+    $composer_0.startReplaceGroup_5hh8aj_k$(-1389301971);
+    // Inline function 'androidx.compose.runtime.cache' call
+    var invalid = !!((($changed & 14 ^ 6) > 4 && $composer_0.changed_ga7h3f_k$(resource) || ($changed & 6) === 4) | $composer_0.changed_ga7h3f_k$(environment));
+    // Inline function 'kotlin.let' call
+    var it = $composer_0.rememberedValue_4dg93v_k$();
+    var tmp;
+    if (invalid || it === Companion_getInstance().get_Empty_i9b85g_k$()) {
+      var value = getResourceItemByEnvironment(resource, environment).get_path_qm550n_k$();
+      $composer_0.updateRememberedValue_l1wh71_k$(value);
+      tmp = value;
+    } else {
+      tmp = it;
+    }
+    var tmp_0 = tmp;
+    var tmp0_group = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
+    $composer_0.endReplaceGroup_ek144q_k$();
+    var filePath = tmp0_group;
+    if (endsWith(filePath, '.xml', true)) {
+      $composer_0.startReplaceGroup_5hh8aj_k$(-118556854);
+      var tmp1_return = rememberVectorPainter(vectorResource(resource, $composer_0, 14 & $changed), $composer_0, 0);
+      $composer_0.endReplaceGroup_ek144q_k$();
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
+      $composer_0.endReplaceGroup_ek144q_k$();
+      return tmp1_return;
+    } else if (endsWith(filePath, '.svg', true)) {
+      $composer_0.startReplaceGroup_5hh8aj_k$(-118445595);
+      var tmp2_return = svgPainter(resource, $composer_0, 14 & $changed);
+      $composer_0.endReplaceGroup_ek144q_k$();
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
+      $composer_0.endReplaceGroup_ek144q_k$();
+      return tmp2_return;
+    } else {
+      $composer_0.startReplaceGroup_5hh8aj_k$(-118396429);
+      var tmp3_return = new BitmapPainter(imageResource(resource, $composer_0, 14 & $changed));
+      $composer_0.endReplaceGroup_ek144q_k$();
+      if (isTraceInProgress()) {
+        traceEventEnd();
+      }
+      $composer_0.endReplaceGroup_ek144q_k$();
+      return tmp3_return;
+    }
+  }
   function DrawableResource(id, items) {
     Resource.call(this, id, items);
   }
@@ -380,70 +440,6 @@
     }
     $composer_0.endReplaceGroup_ek144q_k$();
     return tmp0_0;
-  }
-  function painterResource(resource, $composer, $changed) {
-    _init_properties_ImageResources_kt__6e1y7e();
-    var $composer_0 = $composer;
-    $composer_0.startReplaceGroup_5hh8aj_k$(-1508925367);
-    if (isTraceInProgress()) {
-      traceEventStart(-1508925367, $changed, -1, 'org.jetbrains.compose.resources.painterResource (ImageResources.kt:35)');
-    }
-    // Inline function 'androidx.compose.runtime.CompositionLocal.current' call
-    var this_0 = get_LocalComposeEnvironment();
-    var $composer_1 = $composer_0;
-    sourceInformationMarkerStart($composer_1, 2023513938, 'CC(<get-current>):CompositionLocal.kt#9igjgp');
-    var tmp0 = $composer_1.consume_ebzcrh_k$(this_0);
-    sourceInformationMarkerEnd($composer_1);
-    var environment = tmp0.rememberEnvironment_3peo8j_k$($composer_0, 0);
-    $composer_0.startReplaceGroup_5hh8aj_k$(-1389301971);
-    // Inline function 'androidx.compose.runtime.cache' call
-    var invalid = !!((($changed & 14 ^ 6) > 4 && $composer_0.changed_ga7h3f_k$(resource) || ($changed & 6) === 4) | $composer_0.changed_ga7h3f_k$(environment));
-    // Inline function 'kotlin.let' call
-    var it = $composer_0.rememberedValue_4dg93v_k$();
-    var tmp;
-    if (invalid || it === Companion_getInstance().get_Empty_i9b85g_k$()) {
-      var value = getResourceItemByEnvironment(resource, environment).get_path_qm550n_k$();
-      $composer_0.updateRememberedValue_l1wh71_k$(value);
-      tmp = value;
-    } else {
-      tmp = it;
-    }
-    var tmp_0 = tmp;
-    var tmp0_group = (tmp_0 == null ? true : !(tmp_0 == null)) ? tmp_0 : THROW_CCE();
-    $composer_0.endReplaceGroup_ek144q_k$();
-    var filePath = tmp0_group;
-    if (endsWith(filePath, '.xml', true)) {
-      $composer_0.startReplaceGroup_5hh8aj_k$(-118556854);
-      var tmp1_return = rememberVectorPainter(vectorResource(resource, $composer_0, 14 & $changed), $composer_0, 0);
-      $composer_0.endReplaceGroup_ek144q_k$();
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-      $composer_0.endReplaceGroup_ek144q_k$();
-      return tmp1_return;
-    } else if (endsWith(filePath, '.svg', true)) {
-      $composer_0.startReplaceGroup_5hh8aj_k$(-118445595);
-      var tmp2_return = svgPainter(resource, $composer_0, 14 & $changed);
-      $composer_0.endReplaceGroup_ek144q_k$();
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-      $composer_0.endReplaceGroup_ek144q_k$();
-      return tmp2_return;
-    } else {
-      $composer_0.startReplaceGroup_5hh8aj_k$(-118396429);
-      var tmp3_return = new BitmapPainter(imageResource(resource, $composer_0, 14 & $changed));
-      $composer_0.endReplaceGroup_ek144q_k$();
-      if (isTraceInProgress()) {
-        traceEventEnd();
-      }
-      $composer_0.endReplaceGroup_ek144q_k$();
-      return tmp3_return;
-    }
-  }
-  function loadImage(path, cacheKey, resourceReader, decode, $completion) {
-    var tmp = get_imageCache();
-    return tmp.getOrLoad_lwanaa_k$(cacheKey, loadImage$slambda_0(decode, resourceReader, path, null), $completion);
   }
   function svgPainter(resource, $composer, $changed) {
     _init_properties_ImageResources_kt__6e1y7e();
@@ -546,6 +542,10 @@
     }
     $composer_0.endReplaceGroup_ek144q_k$();
     return tmp0;
+  }
+  function loadImage(path, cacheKey, resourceReader, decode, $completion) {
+    var tmp = get_imageCache();
+    return tmp.getOrLoad_lwanaa_k$(cacheKey, loadImage$slambda_0(decode, resourceReader, path, null), $completion);
   }
   function vectorResource$lambda($imageVector$delegate) {
     _init_properties_ImageResources_kt__6e1y7e();
@@ -667,64 +667,6 @@
       return i.invoke_fxeejx_k$(env, $completion);
     };
     l.$arity = 1;
-    return l;
-  }
-  function loadImage$slambda($decode, $resourceReader, $path, resultContinuation) {
-    this.$decode_1 = $decode;
-    this.$resourceReader_1 = $resourceReader;
-    this.$path_1 = $path;
-    CoroutineImpl.call(this, resultContinuation);
-  }
-  protoOf(loadImage$slambda).invoke_cktuep_k$ = function ($completion) {
-    var tmp = this.create_d196fn_k$($completion);
-    tmp.set_result_xj64lm_k$(Unit_getInstance());
-    tmp.set_exception_px07aa_k$(null);
-    return tmp.doResume_5yljmg_k$();
-  };
-  protoOf(loadImage$slambda).invoke_ib42db_k$ = function ($completion) {
-    return this.invoke_cktuep_k$($completion);
-  };
-  protoOf(loadImage$slambda).doResume_5yljmg_k$ = function () {
-    var suspendResult = this.get_result_iyg5d2_k$();
-    $sm: do
-      try {
-        var tmp = this.get_state_iypx7s_k$();
-        switch (tmp) {
-          case 0:
-            this.set_exceptionState_fex74n_k$(2);
-            this.set_state_rjd8d0_k$(1);
-            suspendResult = this.$resourceReader_1.read_3sms9f_k$(this.$path_1, this);
-            if (suspendResult === get_COROUTINE_SUSPENDED()) {
-              return suspendResult;
-            }
-
-            continue $sm;
-          case 1:
-            var ARGUMENT = suspendResult;
-            return this.$decode_1(ARGUMENT);
-          case 2:
-            throw this.get_exception_x0n6w6_k$();
-        }
-      } catch ($p) {
-        var e = $p;
-        if (this.get_exceptionState_wflpxn_k$() === 2) {
-          throw e;
-        } else {
-          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
-          this.set_exception_px07aa_k$(e);
-        }
-      }
-     while (true);
-  };
-  protoOf(loadImage$slambda).create_d196fn_k$ = function (completion) {
-    return new loadImage$slambda(this.$decode_1, this.$resourceReader_1, this.$path_1, completion);
-  };
-  function loadImage$slambda_0($decode, $resourceReader, $path, resultContinuation) {
-    var i = new loadImage$slambda($decode, $resourceReader, $path, resultContinuation);
-    var l = function ($completion) {
-      return i.invoke_cktuep_k$($completion);
-    };
-    l.$arity = 0;
     return l;
   }
   function svgPainter$lambda_0() {
@@ -892,6 +834,64 @@
       return i.invoke_uxfn1p_k$(env, $completion);
     };
     l.$arity = 1;
+    return l;
+  }
+  function loadImage$slambda($decode, $resourceReader, $path, resultContinuation) {
+    this.$decode_1 = $decode;
+    this.$resourceReader_1 = $resourceReader;
+    this.$path_1 = $path;
+    CoroutineImpl.call(this, resultContinuation);
+  }
+  protoOf(loadImage$slambda).invoke_cktuep_k$ = function ($completion) {
+    var tmp = this.create_d196fn_k$($completion);
+    tmp.set_result_xj64lm_k$(Unit_getInstance());
+    tmp.set_exception_px07aa_k$(null);
+    return tmp.doResume_5yljmg_k$();
+  };
+  protoOf(loadImage$slambda).invoke_ib42db_k$ = function ($completion) {
+    return this.invoke_cktuep_k$($completion);
+  };
+  protoOf(loadImage$slambda).doResume_5yljmg_k$ = function () {
+    var suspendResult = this.get_result_iyg5d2_k$();
+    $sm: do
+      try {
+        var tmp = this.get_state_iypx7s_k$();
+        switch (tmp) {
+          case 0:
+            this.set_exceptionState_fex74n_k$(2);
+            this.set_state_rjd8d0_k$(1);
+            suspendResult = this.$resourceReader_1.read_3sms9f_k$(this.$path_1, this);
+            if (suspendResult === get_COROUTINE_SUSPENDED()) {
+              return suspendResult;
+            }
+
+            continue $sm;
+          case 1:
+            var ARGUMENT = suspendResult;
+            return this.$decode_1(ARGUMENT);
+          case 2:
+            throw this.get_exception_x0n6w6_k$();
+        }
+      } catch ($p) {
+        var e = $p;
+        if (this.get_exceptionState_wflpxn_k$() === 2) {
+          throw e;
+        } else {
+          this.set_state_rjd8d0_k$(this.get_exceptionState_wflpxn_k$());
+          this.set_exception_px07aa_k$(e);
+        }
+      }
+     while (true);
+  };
+  protoOf(loadImage$slambda).create_d196fn_k$ = function (completion) {
+    return new loadImage$slambda(this.$decode_1, this.$resourceReader_1, this.$path_1, completion);
+  };
+  function loadImage$slambda_0($decode, $resourceReader, $path, resultContinuation) {
+    var i = new loadImage$slambda($decode, $resourceReader, $path, resultContinuation);
+    var l = function ($completion) {
+      return i.invoke_cktuep_k$($completion);
+    };
+    l.$arity = 0;
     return l;
   }
   var properties_initialized_ImageResources_kt_9gvoi4;
@@ -1115,42 +1115,6 @@
   }
   var org_jetbrains_compose_resources_Resource$stable;
   var org_jetbrains_compose_resources_ResourceItem$stable;
-  function InternalResourceApi() {
-  }
-  protoOf(InternalResourceApi).equals = function (other) {
-    if (!(other instanceof InternalResourceApi))
-      return false;
-    other instanceof InternalResourceApi || THROW_CCE();
-    return true;
-  };
-  protoOf(InternalResourceApi).hashCode = function () {
-    return 0;
-  };
-  protoOf(InternalResourceApi).toString = function () {
-    return '@org.jetbrains.compose.resources.InternalResourceApi(' + ')';
-  };
-  function Resource(id, items) {
-    this.id_1 = id;
-    this.items_1 = items;
-  }
-  protoOf(Resource).get_id_fot53j_k$ = function () {
-    return this.id_1;
-  };
-  protoOf(Resource).get_items_cqpf3y_k$ = function () {
-    return this.items_1;
-  };
-  protoOf(Resource).equals = function (other) {
-    if (this === other)
-      return true;
-    if (other == null || !getKClassFromExpression(this).equals(getKClassFromExpression(other)))
-      return false;
-    if (!(other instanceof Resource))
-      THROW_CCE();
-    return this.id_1 === other.id_1;
-  };
-  protoOf(Resource).hashCode = function () {
-    return getStringHashCode(this.id_1);
-  };
   function ResourceItem(qualifiers, path, offset, size) {
     this.qualifiers_1 = qualifiers;
     this.path_1 = path;
@@ -1216,6 +1180,42 @@
     if (!equalsLong(this.size_1, tmp0_other_with_cast.size_1))
       return false;
     return true;
+  };
+  function InternalResourceApi() {
+  }
+  protoOf(InternalResourceApi).equals = function (other) {
+    if (!(other instanceof InternalResourceApi))
+      return false;
+    other instanceof InternalResourceApi || THROW_CCE();
+    return true;
+  };
+  protoOf(InternalResourceApi).hashCode = function () {
+    return 0;
+  };
+  protoOf(InternalResourceApi).toString = function () {
+    return '@org.jetbrains.compose.resources.InternalResourceApi(' + ')';
+  };
+  function Resource(id, items) {
+    this.id_1 = id;
+    this.items_1 = items;
+  }
+  protoOf(Resource).get_id_fot53j_k$ = function () {
+    return this.id_1;
+  };
+  protoOf(Resource).get_items_cqpf3y_k$ = function () {
+    return this.items_1;
+  };
+  protoOf(Resource).equals = function (other) {
+    if (this === other)
+      return true;
+    if (other == null || !getKClassFromExpression(this).equals(getKClassFromExpression(other)))
+      return false;
+    if (!(other instanceof Resource))
+      THROW_CCE();
+    return this.id_1 === other.id_1;
+  };
+  protoOf(Resource).hashCode = function () {
+    return getStringHashCode(this.id_1);
   };
   function ExperimentalResourceApi() {
   }
@@ -2200,18 +2200,18 @@
   }
   var LocalResourceReader;
   var org_jetbrains_compose_resources_MissingResourceException$stable;
+  function ResourceReader() {
+  }
   function readResourceBytes(path, $completion) {
     return get_DefaultResourceReader().read_3sms9f_k$(path, $completion);
-  }
-  function getResourceUri(path) {
-    _init_properties_ResourceReader_kt__hdc5sh();
-    return get_DefaultResourceReader().getUri_3gtoqs_k$(path);
-  }
-  function ResourceReader() {
   }
   function MissingResourceException(path) {
     Exception_init_$Init$('Missing resource with path: ' + path, this);
     captureStack(this, MissingResourceException);
+  }
+  function getResourceUri(path) {
+    _init_properties_ResourceReader_kt__hdc5sh();
+    return get_DefaultResourceReader().getUri_3gtoqs_k$(path);
   }
   function LocalResourceReader$lambda() {
     _init_properties_ResourceReader_kt__hdc5sh();
