@@ -1026,7 +1026,7 @@
     var modifier_0 = {_v: modifier};
     var $composer_0 = $composer;
     $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(1179879845);
-    sourceInformation($composer_0, 'C(ChatListScreen)132@4902L22,132@4885L39,133@4949L224,144@5227L47,144@5276L2,145@5301L39,145@5342L2,146@5367L36,146@5405L2,150@5470L40,150@5512L2,151@5537L38,151@5577L2,152@5602L36,152@5640L2,153@5665L43,153@5710L2,156@5744L25,157@5795L27,158@5844L23,160@5873L832:ChatListDemoScreen.kt#piho0p');
+    sourceInformation($composer_0, 'C(ChatListScreen)132@4902L22,132@4885L39,133@4949L224,144@5227L47,144@5276L2,145@5301L39,145@5342L2,146@5367L36,146@5405L2,150@5470L40,150@5512L2,151@5537L38,151@5577L2,152@5602L36,152@5640L2,153@5665L43,153@5710L2,155@5741L23,157@5770L832:ChatListDemoScreen.kt#piho0p');
     var $dirty = $changed;
     if (!(($default & 1) === 0))
       $dirty = $dirty | 6;
@@ -1145,7 +1145,7 @@
       var tmp_14 = tmp_13;
       var tmp5_group = (tmp_14 == null ? true : !(tmp_14 == null)) ? tmp_14 : THROW_CCE();
       sourceInformationMarkerEnd($composer_0);
-      var primaryLayer = listOf([tmp_7, tmp_11, new JellyFabItem(tmp_12, tmp5_group)]);
+      var primaryItems = listOf([tmp_7, tmp_11, new JellyFabItem(tmp_12, tmp5_group)]);
       var tmp_15 = vectorResource(get_ic_settings(drawable_getInstance()), $composer_0, 0);
       sourceInformationMarkerStart($composer_0, -6812441, 'CC(remember):ChatListDemoScreen.kt#9igjgp');
       // Inline function 'androidx.compose.runtime.cache' call
@@ -1217,41 +1217,7 @@
       var tmp_29 = tmp_28;
       var tmp9_group = (tmp_29 == null ? true : !(tmp_29 == null)) ? tmp_29 : THROW_CCE();
       sourceInformationMarkerEnd($composer_0);
-      var secondaryLayer = listOf([tmp_18, tmp_22, tmp_26, new JellyFabItem(tmp_27, tmp9_group)]);
-      sourceInformationMarkerStart($composer_0, -6804994, 'CC(remember):ChatListDemoScreen.kt#9igjgp');
-      // Inline function 'androidx.compose.runtime.cache' call
-      var this_8 = $composer_0;
-      // Inline function 'kotlin.let' call
-      var it_8 = this_8.rememberedValue_4dg93v_k$();
-      var tmp_30;
-      if (false || it_8 === Companion_getInstance_1().get_Empty_i9b85g_k$()) {
-        var value_8 = primaryLayer;
-        this_8.updateRememberedValue_l1wh71_k$(value_8);
-        tmp_30 = value_8;
-      } else {
-        tmp_30 = it_8;
-      }
-      var tmp_31 = tmp_30;
-      var tmp10_group = (tmp_31 == null ? true : !(tmp_31 == null)) ? tmp_31 : THROW_CCE();
-      sourceInformationMarkerEnd($composer_0);
-      var primaryItems = tmp10_group;
-      sourceInformationMarkerStart($composer_0, -6803360, 'CC(remember):ChatListDemoScreen.kt#9igjgp');
-      // Inline function 'androidx.compose.runtime.cache' call
-      var this_9 = $composer_0;
-      // Inline function 'kotlin.let' call
-      var it_9 = this_9.rememberedValue_4dg93v_k$();
-      var tmp_32;
-      if (false || it_9 === Companion_getInstance_1().get_Empty_i9b85g_k$()) {
-        var value_9 = secondaryLayer;
-        this_9.updateRememberedValue_l1wh71_k$(value_9);
-        tmp_32 = value_9;
-      } else {
-        tmp_32 = it_9;
-      }
-      var tmp_33 = tmp_32;
-      var tmp11_group = (tmp_33 == null ? true : !(tmp_33 == null)) ? tmp_33 : THROW_CCE();
-      sourceInformationMarkerEnd($composer_0);
-      var secondaryItems = tmp11_group;
+      var secondaryItems = listOf([tmp_18, tmp_22, tmp_26, new JellyFabItem(tmp_27, tmp9_group)]);
       var jellyState = rememberJellyFabState(false, false, $composer_0, 0, 3);
       // Inline function 'androidx.compose.foundation.layout.Box' call
       var modifier_1 = background(fillMaxSize(modifier_0._v), Companion_getInstance_2().get_White_xpp3qf_k$());
@@ -1279,8 +1245,8 @@
       // Inline function 'androidx.compose.runtime.ReusableComposeNode' call
       var $composer_3 = $composer_2;
       sourceInformationMarkerStart($composer_3, -553112988, 'CC(ReusableComposeNode)P(1,2)399@15590L9:Composables.kt#9igjgp');
-      var tmp_34 = $composer_3.get_applier_bupu8u_k$();
-      if (!isInterface(tmp_34, Applier)) {
+      var tmp_30 = $composer_3.get_applier_bupu8u_k$();
+      if (!isInterface(tmp_30, Applier)) {
         invalidApplier();
       }
       $composer_3.startReusableNode_jjgeyp_k$();
@@ -1305,7 +1271,7 @@
       sourceInformationMarkerStart($composer_4, 1833054614, 'C72@3469L9:Box.kt#2w3rfo');
       BoxScopeInstance_getInstance();
       var $composer_5 = $composer_4;
-      sourceInformationMarkerStart($composer_5, -2025615397, 'C165@5986L567,190@6563L136:ChatListDemoScreen.kt#piho0p');
+      sourceInformationMarkerStart($composer_5, -2025615397, 'C162@5883L567,187@6460L136:ChatListDemoScreen.kt#piho0p');
       // Inline function 'androidx.compose.foundation.layout.Column' call
       var modifier_3 = fillMaxSize(Companion_getInstance());
       var verticalArrangement = null;
@@ -1332,8 +1298,8 @@
       // Inline function 'androidx.compose.runtime.ReusableComposeNode' call
       var $composer_8 = $composer_7;
       sourceInformationMarkerStart($composer_8, -553112988, 'CC(ReusableComposeNode)P(1,2)399@15590L9:Composables.kt#9igjgp');
-      var tmp_35 = $composer_8.get_applier_bupu8u_k$();
-      if (!isInterface(tmp_35, Applier)) {
+      var tmp_31 = $composer_8.get_applier_bupu8u_k$();
+      if (!isInterface(tmp_31, Applier)) {
         invalidApplier();
       }
       $composer_8.startReusableNode_jjgeyp_k$();
@@ -1358,59 +1324,59 @@
       sourceInformationMarkerStart($composer_9, 2093002350, 'C89@4557L9:Column.kt#2w3rfo');
       var tmp0_3 = ColumnScopeInstance_getInstance();
       var $composer_10 = $composer_9;
-      sourceInformationMarkerStart($composer_10, 1238207292, 'C169@6065L16,173@6174L19,171@6095L112,176@6221L29,180@6337L206,178@6264L279:ChatListDemoScreen.kt#piho0p');
+      sourceInformationMarkerStart($composer_10, 1238207292, 'C166@5962L16,170@6071L19,168@5992L112,173@6118L29,177@6234L206,175@6161L279:ChatListDemoScreen.kt#piho0p');
       MessagesHeader($composer_10, 0);
-      var tmp_36 = ChatListScreen$lambda(searchText$delegate);
+      var tmp_32 = ChatListScreen$lambda(searchText$delegate);
       sourceInformationMarkerStart($composer_10, 455587196, 'CC(remember):ChatListDemoScreen.kt#9igjgp');
       // Inline function 'androidx.compose.runtime.cache' call
       var invalid_0 = $composer_10.changed_ga7h3f_k$(searchText$delegate);
       // Inline function 'kotlin.let' call
-      var it_10 = $composer_10.rememberedValue_4dg93v_k$();
-      var tmp_37;
-      if (invalid_0 || it_10 === Companion_getInstance_1().get_Empty_i9b85g_k$()) {
-        var value_10 = ChatListScreen$lambda_9(searchText$delegate);
-        $composer_10.updateRememberedValue_l1wh71_k$(value_10);
-        tmp_37 = value_10;
+      var it_8 = $composer_10.rememberedValue_4dg93v_k$();
+      var tmp_33;
+      if (invalid_0 || it_8 === Companion_getInstance_1().get_Empty_i9b85g_k$()) {
+        var value_8 = ChatListScreen$lambda_9(searchText$delegate);
+        $composer_10.updateRememberedValue_l1wh71_k$(value_8);
+        tmp_33 = value_8;
       } else {
-        tmp_37 = it_10;
+        tmp_33 = it_8;
       }
-      var tmp_38 = tmp_37;
-      var tmp0_group_0 = (tmp_38 == null ? true : !(tmp_38 == null)) ? tmp_38 : THROW_CCE();
+      var tmp_34 = tmp_33;
+      var tmp0_group_0 = (tmp_34 == null ? true : !(tmp_34 == null)) ? tmp_34 : THROW_CCE();
       sourceInformationMarkerEnd($composer_10);
-      SearchBar(tmp_36, tmp0_group_0, $composer_10, 0);
-      var tmp_39 = Companion_getInstance();
+      SearchBar(tmp_32, tmp0_group_0, $composer_10, 0);
+      var tmp_35 = Companion_getInstance();
       // Inline function 'androidx.compose.ui.unit.dp' call
-      var tmp$ret$59 = _Dp___init__impl__ms3zkb(8);
-      Spacer(height(tmp_39, tmp$ret$59), $composer_10, 6);
-      var tmp_40 = tmp0_3.weight$default_gbkz97_k$(Companion_getInstance(), 1.0);
+      var tmp$ret$51 = _Dp___init__impl__ms3zkb(8);
+      Spacer(height(tmp_35, tmp$ret$51), $composer_10, 6);
+      var tmp_36 = tmp0_3.weight$default_gbkz97_k$(Companion_getInstance(), 1.0);
       sourceInformationMarkerStart($composer_10, 455592599, 'CC(remember):ChatListDemoScreen.kt#9igjgp');
       // Inline function 'androidx.compose.runtime.cache' call
       var invalid_1 = $composer_10.changedInstance_s1wkiy_k$(filteredChats);
       // Inline function 'kotlin.let' call
-      var it_11 = $composer_10.rememberedValue_4dg93v_k$();
-      var tmp_41;
-      if (invalid_1 || it_11 === Companion_getInstance_1().get_Empty_i9b85g_k$()) {
-        var value_11 = ChatListScreen$lambda_10(filteredChats);
-        $composer_10.updateRememberedValue_l1wh71_k$(value_11);
-        tmp_41 = value_11;
+      var it_9 = $composer_10.rememberedValue_4dg93v_k$();
+      var tmp_37;
+      if (invalid_1 || it_9 === Companion_getInstance_1().get_Empty_i9b85g_k$()) {
+        var value_9 = ChatListScreen$lambda_10(filteredChats);
+        $composer_10.updateRememberedValue_l1wh71_k$(value_9);
+        tmp_37 = value_9;
       } else {
-        tmp_41 = it_11;
+        tmp_37 = it_9;
       }
-      var tmp_42 = tmp_41;
-      var tmp1_group = (tmp_42 == null ? true : !(tmp_42 == null)) ? tmp_42 : THROW_CCE();
+      var tmp_38 = tmp_37;
+      var tmp1_group = (tmp_38 == null ? true : !(tmp_38 == null)) ? tmp_38 : THROW_CCE();
       sourceInformationMarkerEnd($composer_10);
-      LazyColumn(tmp_40, null, null, false, null, null, null, false, null, tmp1_group, $composer_10, 0, 510);
+      LazyColumn(tmp_36, null, null, false, null, null, null, false, null, tmp1_group, $composer_10, 0, 510);
       sourceInformationMarkerEnd($composer_10);
       sourceInformationMarkerEnd($composer_9);
       $composer_8.endNode_3m0yfn_k$();
       sourceInformationMarkerEnd($composer_8);
       sourceInformationMarkerEnd($composer_7);
       sourceInformationMarkerEnd($composer_6);
-      var tmp_43 = _Dp___init__impl__ms3zkb(0.0);
-      var tmp_44 = _Dp___init__impl__ms3zkb(0.0);
-      var tmp_45 = _Color___init__impl__r6cqi2(_ULong___init__impl__c78o9k(new Long(0, 0)));
-      var tmp_46 = _Color___init__impl__r6cqi2(_ULong___init__impl__c78o9k(new Long(0, 0)));
-      JellyFab(null, jellyState, tmp_43, tmp_44, tmp_45, tmp_46, primaryItems, secondaryItems, false, null, $composer_5, 0, 829);
+      var tmp_39 = _Dp___init__impl__ms3zkb(0.0);
+      var tmp_40 = _Dp___init__impl__ms3zkb(0.0);
+      var tmp_41 = _Color___init__impl__r6cqi2(_ULong___init__impl__c78o9k(new Long(0, 0)));
+      var tmp_42 = _Color___init__impl__r6cqi2(_ULong___init__impl__c78o9k(new Long(0, 0)));
+      JellyFab(null, jellyState, tmp_39, tmp_40, tmp_41, tmp_42, primaryItems, secondaryItems, false, null, $composer_5, 0, 829);
       sourceInformationMarkerEnd($composer_5);
       sourceInformationMarkerEnd($composer_4);
       $composer_3.endNode_3m0yfn_k$();
@@ -1423,21 +1389,21 @@
     } else {
       $composer_0.skipToGroupEnd_lh3zi2_k$();
     }
-    var tmp12_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
-    if (tmp12_safe_receiver == null)
+    var tmp10_safe_receiver = $composer_0.endRestartGroup_yxpjv9_k$();
+    if (tmp10_safe_receiver == null)
       null;
     else {
-      tmp12_safe_receiver.updateScope_t8jcf_k$(ChatListScreen$lambda_11(modifier_0, $changed, $default));
+      tmp10_safe_receiver.updateScope_t8jcf_k$(ChatListScreen$lambda_11(modifier_0, $changed, $default));
     }
   }
   function MessagesHeader($composer, $changed) {
     _init_properties_ChatListDemoScreen_kt__uinghx();
     var $composer_0 = $composer;
     $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(1314027731);
-    sourceInformation($composer_0, 'C(MessagesHeader)200@6756L30,202@6792L272,213@7070L30:ChatListDemoScreen.kt#piho0p');
+    sourceInformation($composer_0, 'C(MessagesHeader)197@6653L30,199@6689L272,210@6967L30:ChatListDemoScreen.kt#piho0p');
     if ($composer_0.shouldExecute_4fplh_k$(!($changed === 0), $changed & 1)) {
       if (isTraceInProgress()) {
-        traceEventStart(1314027731, $changed, -1, 'io.github.iprashantpanwar.composeApp.MessagesHeader (ChatListDemoScreen.kt:199)');
+        traceEventStart(1314027731, $changed, -1, 'io.github.iprashantpanwar.composeApp.MessagesHeader (ChatListDemoScreen.kt:196)');
       }
       var tmp = Companion_getInstance();
       // Inline function 'androidx.compose.ui.unit.dp' call
@@ -1476,7 +1442,7 @@
     _init_properties_ChatListDemoScreen_kt__uinghx();
     var $composer_0 = $composer;
     $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(642476747);
-    sourceInformation($composer_0, 'C(SearchBar)P(1)221@7240L7,243@7897L387,253@8352L57,222@7252L1174:ChatListDemoScreen.kt#piho0p');
+    sourceInformation($composer_0, 'C(SearchBar)P(1)218@7137L7,240@7794L387,250@8249L57,219@7149L1174:ChatListDemoScreen.kt#piho0p');
     var $dirty = $changed;
     if (($changed & 6) === 0)
       $dirty = $dirty | ($composer_0.changed_ga7h3f_k$(value) ? 4 : 2);
@@ -1484,7 +1450,7 @@
       $dirty = $dirty | ($composer_0.changedInstance_s1wkiy_k$(onValueChange) ? 32 : 16);
     if ($composer_0.shouldExecute_4fplh_k$(!(($dirty & 19) === 18), $dirty & 1)) {
       if (isTraceInProgress()) {
-        traceEventStart(642476747, $dirty, -1, 'io.github.iprashantpanwar.composeApp.SearchBar (ChatListDemoScreen.kt:220)');
+        traceEventStart(642476747, $dirty, -1, 'io.github.iprashantpanwar.composeApp.SearchBar (ChatListDemoScreen.kt:217)');
       }
       var tmp0 = get_LocalFocusManager();
       // Inline function 'androidx.compose.runtime.CompositionLocal.current' call
@@ -1581,10 +1547,10 @@
     _init_properties_ChatListDemoScreen_kt__uinghx();
     var $composer_0 = $composer;
     $composer_0 = $composer_0.startRestartGroup_lebv1i_k$(-29087954);
-    sourceInformation($composer_0, 'C(DemoMessageScreen)263@8481L46:ChatListDemoScreen.kt#piho0p');
+    sourceInformation($composer_0, 'C(DemoMessageScreen)260@8378L46:ChatListDemoScreen.kt#piho0p');
     if ($composer_0.shouldExecute_4fplh_k$(!($changed === 0), $changed & 1)) {
       if (isTraceInProgress()) {
-        traceEventStart(-29087954, $changed, -1, 'io.github.iprashantpanwar.composeApp.DemoMessageScreen (ChatListDemoScreen.kt:262)');
+        traceEventStart(-29087954, $changed, -1, 'io.github.iprashantpanwar.composeApp.DemoMessageScreen (ChatListDemoScreen.kt:259)');
       }
       JellyFabTheme(false, false, ComposableSingletons$ChatListDemoScreenKt_getInstance().lambda$118949569__1, $composer_0, 384, 3);
       if (isTraceInProgress()) {
@@ -1608,10 +1574,10 @@
   }
   function ComposableSingletons$ChatListDemoScreenKt$lambda$_1346012348$lambda_bm8fue($composer, $changed) {
     var $composer_0 = $composer;
-    sourceInformation($composer_0, 'C236@7686L94:ChatListDemoScreen.kt#piho0p');
+    sourceInformation($composer_0, 'C233@7583L94:ChatListDemoScreen.kt#piho0p');
     if ($composer_0.shouldExecute_4fplh_k$(!(($changed & 3) === 2), $changed & 1)) {
       if (isTraceInProgress()) {
-        traceEventStart(-1346012348, $changed, -1, 'io.github.iprashantpanwar.composeApp.ComposableSingletons$ChatListDemoScreenKt.lambda$-1346012348.<anonymous> (ChatListDemoScreen.kt:236)');
+        traceEventStart(-1346012348, $changed, -1, 'io.github.iprashantpanwar.composeApp.ComposableSingletons$ChatListDemoScreenKt.lambda$-1346012348.<anonymous> (ChatListDemoScreen.kt:233)');
       }
       var tmp = Color(new Long(-10395295, 0));
       var tmp_0 = _TextUnit___init__impl__r5fj1s(new Long(0, 0));
@@ -1635,10 +1601,10 @@
   }
   function ComposableSingletons$ChatListDemoScreenKt$lambda$_1930783998$lambda_tdnd0p($composer, $changed) {
     var $composer_0 = $composer;
-    sourceInformation($composer_0, 'C230@7500L39,229@7468L170:ChatListDemoScreen.kt#piho0p');
+    sourceInformation($composer_0, 'C227@7397L39,226@7365L170:ChatListDemoScreen.kt#piho0p');
     if ($composer_0.shouldExecute_4fplh_k$(!(($changed & 3) === 2), $changed & 1)) {
       if (isTraceInProgress()) {
-        traceEventStart(-1930783998, $changed, -1, 'io.github.iprashantpanwar.composeApp.ComposableSingletons$ChatListDemoScreenKt.lambda$-1930783998.<anonymous> (ChatListDemoScreen.kt:229)');
+        traceEventStart(-1930783998, $changed, -1, 'io.github.iprashantpanwar.composeApp.ComposableSingletons$ChatListDemoScreenKt.lambda$-1930783998.<anonymous> (ChatListDemoScreen.kt:226)');
       }
       var tmp = painterResource(get_ic_search(drawable_getInstance()), $composer_0, 0);
       Icon(tmp, null, null, Color(new Long(-8552832, 0)), $composer_0, 3120, 4);
@@ -1658,10 +1624,10 @@
   }
   function ComposableSingletons$ChatListDemoScreenKt$lambda$118949569$lambda($composer, $changed) {
     var $composer_0 = $composer;
-    sourceInformation($composer_0, 'C264@8505L16:ChatListDemoScreen.kt#piho0p');
+    sourceInformation($composer_0, 'C261@8402L16:ChatListDemoScreen.kt#piho0p');
     if ($composer_0.shouldExecute_4fplh_k$(!(($changed & 3) === 2), $changed & 1)) {
       if (isTraceInProgress()) {
-        traceEventStart(118949569, $changed, -1, 'io.github.iprashantpanwar.composeApp.ComposableSingletons$ChatListDemoScreenKt.lambda$118949569.<anonymous> (ChatListDemoScreen.kt:264)');
+        traceEventStart(118949569, $changed, -1, 'io.github.iprashantpanwar.composeApp.ComposableSingletons$ChatListDemoScreenKt.lambda$118949569.<anonymous> (ChatListDemoScreen.kt:261)');
       }
       ChatListScreen(null, $composer_0, 0, 1);
       if (isTraceInProgress()) {
@@ -1795,7 +1761,7 @@
         var $changed_0 = 14 & $dirty;
         var $composer_1 = $composer_0;
         $composer_1.startReplaceGroup_5hh8aj_k$(-37117659);
-        sourceInformation($composer_1, 'C*185@6491L20:ChatListDemoScreen.kt#piho0p');
+        sourceInformation($composer_1, 'C*182@6388L20:ChatListDemoScreen.kt#piho0p');
         ChatRow(null, tmp2, $composer_1, 112 & $changed_0, 1);
         $composer_1.endReplaceGroup_ek144q_k$();
         var tmp_2;

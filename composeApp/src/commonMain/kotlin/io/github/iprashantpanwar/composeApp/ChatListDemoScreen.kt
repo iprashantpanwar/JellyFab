@@ -141,21 +141,18 @@ fun ChatListScreen(
         }
     }
 
-    val primaryLayer = listOf(
+    val primaryItems = listOf(
         JellyFabItem(vectorResource(Res.drawable.ic_more_horizontal)) {},
         JellyFabItem(vectorResource(Res.drawable.ic_message)) {},
         JellyFabItem(vectorResource(Res.drawable.ic_apps)) {},
     )
 
-    val secondaryLayer = listOf(
+    val secondaryItems = listOf(
         JellyFabItem(vectorResource(Res.drawable.ic_settings)) {},
         JellyFabItem(vectorResource(Res.drawable.ic_folder)) {},
         JellyFabItem(vectorResource(Res.drawable.ic_mail)) {},
         JellyFabItem(vectorResource(Res.drawable.ic_paper_plane)) {},
     )
-
-    val primaryItems = remember { primaryLayer }
-    val secondaryItems = remember { secondaryLayer }
     val jellyState = rememberJellyFabState()
 
     Box(
