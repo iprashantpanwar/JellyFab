@@ -11,4 +11,15 @@ plugins {
     alias(libs.plugins.androidLint) apply false
     alias(libs.plugins.vanniktechPublish) apply false
     alias(libs.plugins.dokka) apply false
+    alias(libs.plugins.binaryCompatibilityValidator)
+}
+
+apiValidation {
+    ignoredProjects += listOf(
+        "composeApp"
+    )
+
+    nonPublicMarkers += listOf(
+        "androidx.compose.runtime.InternalComposeApi"
+    )
 }
