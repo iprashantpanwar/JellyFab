@@ -1,11 +1,6 @@
 # Android Studio / IntelliJ
 *.iml
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+.idea/
 
 # Gradle / Kotlin
 .gradle/
@@ -15,8 +10,11 @@
 local.properties
 
 # Build output
-/build/
+**/build/
 .artifacts/
+
+# Kotlin JS / Wasm
+kotlin-js-store/
 
 # Android generated files
 /captures/
@@ -30,3 +28,15 @@ local.properties
 # OS
 .DS_Store
 Thumbs.db
+
+# Logs
+*.log
+
+# Kotlin/Native
+*.kexe
+*.framework
+*.dSYM
+
+# Compose Desktop
+composeApp/dist/
+composeApp/release/

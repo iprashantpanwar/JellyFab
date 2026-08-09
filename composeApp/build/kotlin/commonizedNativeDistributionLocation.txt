@@ -1,1 +1,0 @@
-/Users/prashantpanwar/.konan/kotlin-native-prebuilt-macos-x86_64-2.2.20/klib/commonized/2.2.20

@@ -32,15 +32,11 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
+        with:
+          cache-read-only: false
 
-      - name: Build
-        run: ./gradlew build --stacktrace
-
-      - name: Run Checks
-        run: ./gradlew check --stacktrace
-
-      - name: Android Lint
-        run: ./gradlew :jellyfab:lint --stacktrace
+      - name: Build, Check & Lint
+        run: ./gradlew build check :jellyfab:lint --stacktrace
 
       - name: Binary Compatibility Check
         run: ./gradlew apiCheck --stacktrace
