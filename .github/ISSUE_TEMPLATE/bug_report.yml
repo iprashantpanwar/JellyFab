@@ -1,0 +1,66 @@
+name: Bug Report
+description: Report a bug or unexpected behavior in JellyFab.
+title: "[Bug]: "
+labels:
+  - bug
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug!
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the issue.
+      placeholder: What happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Android
+        - Desktop
+        - iOS
+        - Web (JS)
+        - Wasm
+        - JVM
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: JellyFab version
+      placeholder: 2.0.0
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      placeholder: Screenshots, logs, sample code, etc.
