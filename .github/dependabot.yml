@@ -1,0 +1,49 @@
+version: 2
+
+updates:
+  - package-ecosystem: "gradle"
+    directory: "/"
+
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "UTC"
+
+    open-pull-requests-limit: 10
+
+    commit-message:
+      prefix: "chore(deps)"
+
+    labels:
+      - "dependencies"
+
+    groups:
+      kotlin:
+        patterns:
+          - "org.jetbrains.kotlin*"
+
+      compose:
+        patterns:
+          - "org.jetbrains.compose*"
+
+      androidx:
+        patterns:
+          - "androidx*"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:15"
+      timezone: "UTC"
+
+    open-pull-requests-limit: 5
+
+    commit-message:
+      prefix: "chore(ci)"
+
+    labels:
+      - "dependencies"
