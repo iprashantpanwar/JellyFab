@@ -38,5 +38,8 @@ jobs:
       - name: Build, Check & Lint
         run: ./gradlew build check :jellyfab:lint --stacktrace
 
+      - name: Kotlin Style Check
+        run: ./gradlew ktlintCheck --stacktrace
+
       - name: Binary Compatibility Check
         run: ./gradlew apiCheck --stacktrace

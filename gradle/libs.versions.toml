@@ -20,6 +20,7 @@ core = "1.5.0"
 vanniktech = "0.34.0"
 dokka = "2.0.0"
 binaryCompatibilityValidator = "0.18.1"
+ktlintGradle = "13.1.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -49,3 +50,4 @@ androidLint = { id = "com.android.lint", version.ref = "agp" }
 vanniktechPublish = { id = "com.vanniktech.maven.publish", version.ref = "vanniktech" }
 dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
 binaryCompatibilityValidator = { id = "org.jetbrains.kotlinx.binary-compatibility-validator", version.ref = "binaryCompatibilityValidator" }
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlintGradle" }

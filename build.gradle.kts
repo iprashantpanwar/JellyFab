@@ -12,14 +12,24 @@ plugins {
     alias(libs.plugins.vanniktechPublish) apply false
     alias(libs.plugins.dokka) apply false
     alias(libs.plugins.binaryCompatibilityValidator)
+    alias(libs.plugins.ktlint)
 }
 
 apiValidation {
-    ignoredProjects += listOf(
-        "composeApp"
-    )
+    ignoredProjects +=
+        listOf(
+            "composeApp",
+        )
 
-    nonPublicMarkers += listOf(
-        "androidx.compose.runtime.InternalComposeApi"
-    )
+    nonPublicMarkers +=
+        listOf(
+            "androidx.compose.runtime.InternalComposeApi",
+        )
+}
+
+ktlint {
+    android.set(true)
+    ignoreFailures.set(false)
+    outputToConsole.set(true)
+    coloredOutput.set(true)
 }
