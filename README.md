@@ -2,8 +2,6 @@
   <img src="art/jellyfab_logo.png" width="220" alt="JellyFab Logo" />
 </p>
 
-<h1 align="center">JellyFab</h1>
-
 <p align="center">
   <strong>A physics-driven Floating Action Button menu for Compose Multiplatform.</strong>
 </p>
@@ -24,20 +22,17 @@ Designed for apps that value motion, playfulness, and polished interaction.
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.iprashantpanwar/jellyfab)](https://central.sonatype.com/artifact/io.github.iprashantpanwar/jellyfab)
 [![CI](https://github.com/iprashantpanwar/JellyFab/actions/workflows/ci.yml/badge.svg)](https://github.com/iprashantpanwar/JellyFab/actions/workflows/ci.yml)
-[![Documentation](https://img.shields.io/badge/API-Dokka-blue.svg)](https://iprashantpanwar.github.io/JellyFab/)
+[![API Documentation](https://img.shields.io/badge/API-Dokka-blue)](https://iprashantpanwar.github.io/JellyFab/)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.2-blue.svg?logo=kotlin)](https://kotlinlang.org)
 [![Compose Multiplatform](https://img.shields.io/badge/Compose-Multiplatform-4285F4)](https://www.jetbrains.com/compose-multiplatform/)
 [![License](https://img.shields.io/github/license/iprashantpanwar/JellyFab)](LICENSE)
 
 </p>
 
----
-
 <p align="center">
   <img src="art/jellyfab.gif" width="900" alt="JellyFab Demo"/>
 </p>
 
----
 
 ## 🎯 Inspiration
 
