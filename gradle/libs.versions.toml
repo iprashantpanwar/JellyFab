@@ -20,7 +20,7 @@ core = "1.5.0"
 vanniktech = "0.34.0"
 dokka = "2.0.0"
 binaryCompatibilityValidator = "0.18.1"
-ktlintGradle = "13.1.0"
+ktlintGradle = "14.2.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
