@@ -18,7 +18,7 @@ kotlinStdlib = "2.2.20"
 runner = "1.5.2"
 core = "1.5.0"
 vanniktech = "0.34.0"
-dokka = "2.0.0"
+dokka = "2.2.0"
 binaryCompatibilityValidator = "0.18.1"
 ktlintGradle = "13.1.0"
 
