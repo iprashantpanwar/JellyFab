@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="jellyfab-jvm-1.0.0">
+    <output-path>$PROJECT_DIR$/jellyfab/build/libs</output-path>
+    <root id="archive" name="jellyfab-jvm-1.0.0.jar">
+      <element id="module-output" name="JellyFab.jellyfab.jvmMain" />
+    </root>
+  </artifact>
+</component>

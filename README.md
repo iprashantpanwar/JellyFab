@@ -1,116 +1,120 @@
 <p align="center">
-  <!-- Replace this later with your final Jellyfish logo -->
-  <img src="art/jellyfab_logo.png" width="200" alt="JellyFab Logo" />
+  <img src="art/jellyfab_logo.png" width="220" alt="JellyFab Logo" />
 </p>
 
+<h1 align="center">JellyFab</h1>
 
-# JellyFab
-<p align="start">
-  <a href="https://android.com">
-    <img src="https://img.shields.io/badge/platform-Android-3DDC84?logo=android&logoColor=white" />
-  </a>
-  <a href="https://kotlinlang.org">
-    <img src="https://img.shields.io/badge/Kotlin-2.0.21-blue?logo=kotlin" />
-  </a>
-  <a href="https://developer.android.com/jetpack/compose">
-    <img src="https://img.shields.io/badge/Jetpack%20Compose-UI%20Toolkit-4285F4?logo=jetpackcompose&logoColor=white" />
-  </a>
-  <a href="https://jitpack.io/#iprashantpanwar/JellyFab">
-    <img src="https://jitpack.io/v/iprashantpanwar/JellyFab.svg" />
-  </a>
+<p align="center">
+  <strong>A physics-driven Floating Action Button menu for Compose Multiplatform.</strong>
 </p>
 
-A modern, physics-driven floating action menu for **Jetpack Compose**. JellyFab provides a smooth, flexible, and delightful jelly-like expansion animation based on real spring dynamics, while remaining easy to integrate, fully customizable, and production-ready.
+<p align="center">
+Create beautiful, jelly-like floating action menus with natural spring animations using a single API across Android, iOS, Desktop, Web, and Wasm.
+</p>
 
+<p align="center">
 Designed for apps that value motion, playfulness, and polished interaction.
-
-<p align="center">
-  <img src="art/jellyfab.gif" width="840" alt="JellyFab demo animation" />
 </p>
 
-Inspiration: https://dribbble.com/shots/3908815-Floating-button
-
 <p align="center">
-  <img src="art/jellyfab_inspiration.gif" width="540" alt="JellyFab demo animation" />
+📖 Featured on <strong>ProAndroidDev</strong> · <a href="https://medium.com/proandroiddev/i-built-a-jelly-like-fab-menu-for-jetpack-compose-42e9f65f6576">Read the article</a>
 </p>
 
-## 📖 How JellyFab Works
-Wrote a deep dive on ProAndroidDev covering the implementation.
+<p align="center">
 
-👉 **I Built a Jelly-Like FAB Menu for Jetpack Compose. Here's How the Blob Actually Works**
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.iprashantpanwar/jellyfab)](https://central.sonatype.com/artifact/io.github.iprashantpanwar/jellyfab)
+[![CI](https://github.com/iprashantpanwar/JellyFab/actions/workflows/ci.yml/badge.svg)](https://github.com/iprashantpanwar/JellyFab/actions/workflows/ci.yml)
+[![Documentation](https://img.shields.io/badge/API-Dokka-blue.svg)](https://iprashantpanwar.github.io/JellyFab/)
+[![Kotlin](https://img.shields.io/badge/Kotlin-2.2-blue.svg?logo=kotlin)](https://kotlinlang.org)
+[![Compose Multiplatform](https://img.shields.io/badge/Compose-Multiplatform-4285F4)](https://www.jetbrains.com/compose-multiplatform/)
+[![License](https://img.shields.io/github/license/iprashantpanwar/JellyFab)](LICENSE)
 
-https://medium.com/proandroiddev/i-built-a-jelly-like-fab-menu-for-jetpack-compose-42e9f65f6576
+</p>
 
 ---
 
-## ✨ Features
-
-- **Jelly-like elastic expansion** using physics-based `Animatable` control
-- **Primary mini-FAB orbit** arranged along a curved arc
-- **Optional secondary expansion layer** that emerges from the first FAB
-- **Scrim dimming layer** with tap-to-collapse support
-- **Composable-first API** — works cleanly with state hoisting
-- **Lightweight, dependency-free**, built entirely using Jetpack Compose
+<p align="center">
+  <img src="art/jellyfab.gif" width="900" alt="JellyFab Demo"/>
+</p>
 
 ---
 
-## 🚀 Installation (JitPack)
+## 🎯 Inspiration
 
-Add JitPack to your root `settings.gradle` / `settings.gradle.kts`:
+Inspired by this beautiful Dribbble concept:
 
-```kotlin
-dependencyResolutionManagement {
-    repositories {
-        mavenCentral()
-        maven("https://jitpack.io")
-    }
-}
-```
+https://dribbble.com/shots/3908815-Floating-button
 
-Add the dependency:
+<p align="center">
+  <img src="art/demo/jellyfab_inspiration.gif" width="540"/>
+</p>
+
+---
+
+## 📸 Demo
+
+JellyFab provides the same smooth, physics-driven floating action menu across every Compose Multiplatform target.
+
+| Android                                                           | iOS                                                       |
+|-------------------------------------------------------------------|-----------------------------------------------------------|
+| <img src="art/demo/android.gif" width="320" alt="Android Demo" /> | <img src="art/demo/ios.gif" width="320" alt="iOS Demo" /> |
+
+| Desktop                                                           | Web                                                       |
+|-------------------------------------------------------------------|-----------------------------------------------------------|
+| <img src="art/demo/desktop.gif" width="320" alt="Desktop Demo" /> | <img src="art/demo/web.gif" width="320" alt="Web Demo" /> |
+
+
+---
+
+# 🚀 Installation
+
+JellyFab is available on **Maven Central**.
 
 ```kotlin
 dependencies {
-    implementation("com.github.iprashantpanwar:JellyFab:<latest-version>")
+    implementation("io.github.iprashantpanwar:jellyfab:<latest-version>")
 }
 ```
 
-> Check the latest version here: https://jitpack.io/#iprashantpanwar/JellyFab
-
 ---
 
-## 🧩 Usage
+# 🧩 Quick Start
 
 ```kotlin
-val jellyState = rememberJellyFabState()
+val state = rememberJellyFabState()
 
 JellyFab(
-    state = jellyState,
+    state = state,
     primaryItems = listOf(
-        JellyFabItem(Icons.Default.Email) { /* action */ },
-        JellyFabItem(Icons.Default.Notifications) { /* action */ },
-        JellyFabItem(Icons.Default.Settings) { /* action */ }
+        JellyFabItem(Icons.Default.Email) { },
+        JellyFabItem(Icons.Default.Notifications) { },
+        JellyFabItem(Icons.Default.Settings) { }
     ),
     secondaryItems = listOf(
-        JellyFabItem(Icons.Default.Edit) { /* action */ },
-        JellyFabItem(Icons.Default.Share) { /* action */ }
+        JellyFabItem(Icons.Default.Edit) { },
+        JellyFabItem(Icons.Default.Share) { }
     )
 )
 ```
 
-### State Hoisting
+---
+
+# 🎛 State
 
 ```kotlin
-val state = rememberJellyFabState(initialExpanded = false)
-state.expanded = true   // expand primary layer
-state.secondaryExpanded = true // expand secondary layer
+val state = rememberJellyFabState()
+
+state.expanded = true
+state.secondaryExpanded = true
 ```
 
 ---
 
-## 🎛 Configuration
+# ⚙️ Customization
 
-`JellyFabConfig` allows tuning the animation feel:
+JellyFab exposes a configurable API allowing you to customize animation timing, spacing, colors, shadows, and motion.
+
+Example:
 
 ```kotlin
 JellyFab(
@@ -125,12 +129,17 @@ JellyFab(
 
 ---
 
-## 🎨 Customizing Appearance
+# 🎨 Appearance
 
-- Replace icons
-- Change FAB sizes and colors
-- Adjust arc layout spacing
-- Control scrim visibility
+Customize
+
+- Colors
+- Icons
+- FAB sizes
+- Arc spacing
+- Shadow
+- Scrim
+- Motion
 
 Example:
 
@@ -144,37 +153,62 @@ JellyFab(
 
 ---
 
-## 🧠 Architecture Overview
+# 🏗 Architecture
 
-| Layer | Description |
-|------|-------------|
-| `JellyFabState` | Controls expanded/collapsed state for both layers |
-| `JellyPhysics.kt` | Defines spring & bounce animation orchestration |
-| `JellyBlob.kt` | Renders the main jelly shape & deformation path |
-| `JellyFab.kt` | High-level composable coordinating visual layers |
-
----
-
-## 🐞 Issues & Contributions
-
-Contributions, suggestions, and improvements are welcome.
-
-If you encounter an issue:
-1. Search existing issues
-2. If not found, open a new issue with reproduction details
+| Component | Responsibility |
+|------------|----------------|
+| JellyFab | Main composable |
+| JellyFabState | Expansion state |
+| JellyPhysics | Spring animation engine |
+| JellyBlob | Jelly deformation renderer |
+| JellyFabConfig | Animation configuration |
 
 ---
 
-Made with ❤️ and too many physics tweeks 🎛️
+# 📚 API Documentation
 
-## 📜 License
+Browse the latest API documentation:
 
-```
-Apache License 2.0
-Copyright 2025 Prashant Panwar
-```
+**https://iprashantpanwar.github.io/JellyFab/**
 
-This library is free to use and modify.
 
 ---
 
+# 🤝 Contributing
+
+Contributions are always welcome.
+
+If you'd like to improve JellyFab:
+
+- Report bugs
+- Suggest features
+- Improve documentation
+- Submit pull requests
+
+Please use the provided Issue and Pull Request templates.
+
+---
+
+# 🛣 Roadmap
+
+- ✅ Compose Multiplatform migration
+- ✅ Android
+- ✅ iOS
+- ✅ Desktop
+- ✅ JavaScript
+- ✅ Wasm
+- ⏳ More layout options
+
+---
+
+# ❤️ Acknowledgements
+
+Thanks to the Compose Multiplatform and Kotlin communities for making modern cross-platform UI development possible.
+
+---
+
+# 📄 License
+
+JellyFab is licensed under the Apache License 2.0.
+
+See the [LICENSE](LICENSE) file for details.

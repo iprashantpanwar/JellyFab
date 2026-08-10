@@ -1,0 +1,15 @@
+# Default owner for the entire repository
+* @iprashantpanwar
+
+# GitHub workflows
+.github/ @iprashantpanwar
+
+# Library source
+jellyfab/ @iprashantpanwar
+
+# Sample application
+composeApp/ @iprashantpanwar
+
+# Documentation
+README.md @iprashantpanwar
+docs/ @iprashantpanwar

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="jellyfab-wasm-js-2.0.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/jellyfab/build/libs</output-path>
+    <root id="archive" name="jellyfab-wasm-js-2.0.0-SNAPSHOT.jar">
+      <element id="module-output" name="JellyFab.jellyfab.wasmJsMain" />
+    </root>
+  </artifact>
+</component>
